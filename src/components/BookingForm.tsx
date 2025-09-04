@@ -439,19 +439,19 @@ export function BookingForm({ onBack, language }: BookingFormProps) {
                   <div className="w-6 h-6 bg-amber-400 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
                     <span className="text-stone-800 font-bold text-xs">1</span>
                   </div>
-                  <p className="text-stone-300">We review your project requirements</p>
+                  <p className="text-stone-300">Your project requirements get reviewed</p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <div className="w-6 h-6 bg-amber-400 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
                     <span className="text-stone-800 font-bold text-xs">2</span>
                   </div>
-                  <p className="text-stone-300">We prepare a customized proposal</p>
+                  <p className="text-stone-300">A customized proposal gets prepared</p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <div className="w-6 h-6 bg-amber-400 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
                     <span className="text-stone-800 font-bold text-xs">3</span>
                   </div>
-                  <p className="text-stone-300">We schedule a consultation call</p>
+                  <p className="text-stone-300">A consultation call gets scheduled</p>
                 </div>
               </div>
             </div>
