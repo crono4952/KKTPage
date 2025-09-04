@@ -57,8 +57,7 @@ export function BookingForm({ onBack, language }: BookingFormProps) {
       },
       contact: {
         title: "Contact Information",
-        phone: "+1 (555) 123-4567",
-        email: "hello@kktnetwork.com",
+        email: "info@kktnetwork.com",
         response: "We typically respond within 24 hours"
       },
       success: {
@@ -100,8 +99,7 @@ export function BookingForm({ onBack, language }: BookingFormProps) {
       },
       contact: {
         title: "Informations de Contact",
-        phone: "+1 (555) 123-4567",
-        email: "hello@kktnetwork.com",
+        email: "info@kktnetwork.com",
         response: "Nous répondons généralement dans les 24 heures"
       },
       success: {
@@ -396,14 +394,6 @@ export function BookingForm({ onBack, language }: BookingFormProps) {
             <div className="bg-white rounded-2xl p-6 shadow-lg min-w-[280px]">
               <h3 className="text-xl font-semibold text-stone-800 mb-4">{t.contact.title}</h3>
               <div className="space-y-4">
-                <div className="flex items-center space-x-3">
-                  <div className="w-10 h-10 bg-amber-100 rounded-full flex items-center justify-center flex-shrink-0">
-                    <Phone className="w-5 h-5 text-stone-800" />
-                  </div>
-                  <div>
-                    <p className="text-sm font-medium text-stone-800">{t.contact.phone}</p>
-                  </div>
-                </div>
                 <div className="flex items-center space-x-3">
                   <div className="w-10 h-10 bg-amber-100 rounded-full flex items-center justify-center flex-shrink-0">
                     <Mail className="w-5 h-5 text-stone-800" />

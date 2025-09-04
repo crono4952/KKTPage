@@ -367,7 +367,6 @@ function App() {
                 onClick={handleBookCall}
                 className="hidden md:flex items-center space-x-2 bg-amber-500 text-stone-800 px-4 py-2 rounded-lg font-semibold hover:bg-amber-400 transition-all duration-300 shadow-md hover:shadow-lg"
               >
-                <Phone className="w-4 h-4" />
                 <span>{language === 'en' ? 'Book a Call' : 'Réserver un Appel'}</span>
               </button>
               
@@ -406,7 +405,6 @@ function App() {
                     onClick={handleBookCall}
                     className="w-full mb-3 flex items-center justify-center space-x-2 bg-amber-500 text-stone-800 px-4 py-2 rounded-lg font-semibold hover:bg-amber-400 transition-all duration-300"
                   >
-                    <Phone className="w-4 h-4" />
                     <span>{language === 'en' ? 'Book a Call' : 'Réserver un Appel'}</span>
                   </button>
                   <button
@@ -613,8 +611,7 @@ function App() {
             </p>
             <button 
               onClick={handleBookCall}
-              className="group bg-amber-500 text-stone-800 px-10 py-5 rounded-lg font-bold text-lg hover:bg-amber-400 transition-all duration-300 shadow-lg hover:shadow-xl flex items-center justify-center space-x-3 mx-auto"
-            >
+              className="group bg-stone-800 text-white px-10 py-5 rounded-lg font-bold text-lg hover:bg-stone-700 transition-all duration-300 shadow-lg hover:shadow-xl flex items-center justify-center space-x-3"
               <span>{t.cta.button}</span>
               <ArrowRight className="w-6 h-6 group-hover:translate-x-2 transition-transform" />
             </button>
@@ -696,9 +693,8 @@ function App() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <button 
                 onClick={handleBookCall}
-                className="group bg-stone-800 text-white px-10 py-5 rounded-lg font-bold text-lg hover:bg-stone-700 transition-all duration-300 shadow-lg hover:shadow-xl flex items-center justify-center space-x-3"
+                className="group bg-stone-800 text-white px-10 py-5 rounded-lg font-bold text-lg hover:bg-stone-700 transition-all duration-300 shadow-lg hover:shadow-xl flex items-center justify-center space-x-3 mx-auto"
               >
-                <Phone className="w-6 h-6" />
                 <span>{t.bookCall.button}</span>
                 <ArrowRight className="w-6 h-6 group-hover:translate-x-2 transition-transform" />
               </button>
@@ -761,16 +757,7 @@ function App() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-stone-800 mb-1">{t.contact.email}</h3>
-                    <p className="text-stone-600">hello@kktnetwork.com</p>
-                  </div>
-                </div>
-                <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center flex-shrink-0">
-                    <Phone className="w-6 h-6 text-stone-800" />
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-stone-800 mb-1">{t.contact.call}</h3>
-                    <p className="text-stone-600">+1 (555) 123-4567</p>
+                    <p className="text-stone-600">info@kktnetwork.com</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-4">
