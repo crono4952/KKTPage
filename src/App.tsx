@@ -146,7 +146,6 @@ function App() {
         subtitle: "Ready to get a professional website and 24/7 AI customer support? Let's discuss how we can transform your business.",
         email: "Email Us",
         call: "Call Us",
-        visit: "Visit Us",
         firstName: "First Name",
         lastName: "Last Name",
         projectType: "Project Type",
@@ -298,7 +297,6 @@ function App() {
         subtitle: "Prêt à obtenir un site web professionnel et un support client IA 24h/24? Discutons de la façon dont nous pouvons transformer votre entreprise.",
         email: "Envoyez-nous un Email",
         call: "Appelez-Nous",
-        visit: "Visitez-Nous",
         firstName: "Prénom",
         lastName: "Nom",
         projectType: "Type de Projet",
@@ -759,15 +757,6 @@ function App() {
                   <div>
                     <h3 className="font-semibold text-stone-800 mb-1">{t.contact.email}</h3>
                     <p className="text-stone-600">info@kktnetwork.com</p>
-                  </div>
-                </div>
-                <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center flex-shrink-0">
-                    <MapPin className="w-6 h-6 text-stone-800" />
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-stone-800 mb-1">{t.contact.visit}</h3>
-                    <p className="text-stone-600">123 Creative Street<br />Design District, NY 10001</p>
                   </div>
                 </div>
               </div>
