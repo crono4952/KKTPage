@@ -327,10 +327,10 @@ function App() {
     <div className="min-h-screen bg-gradient-to-br from-amber-50 to-stone-100">
       {/* Header */}
       <header className="fixed top-0 left-0 right-0 z-50 bg-white border-b border-stone-200">
-        <div className="max-w-7xl mx-auto px-2 sm:px-4 lg:px-6">
+        <div className="max-w-7xl mx-auto pl-4 pr-2 sm:pr-4 lg:pr-6">
           <div className="flex justify-between items-center h-16">
             {/* Logo */}
-            <div className="flex items-center">
+            <div className="flex items-center -ml-2">
               <img 
                 src="/KKT Logo 2.jpg" 
                 alt="KKT Network Logo" 
