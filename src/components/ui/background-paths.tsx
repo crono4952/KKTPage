@@ -136,7 +136,7 @@ export function BackgroundPaths({
                             hover:shadow-md hover:shadow-neutral-800/50"
                         >
                             <span className="opacity-90 group-hover:opacity-100 transition-opacity">
-                                Discover Excellence
+                                {language === 'en' ? 'Discover Excellence' : 'Découvrir l\'Excellence'}
                             </span>
                             <span
                                 className="ml-3 opacity-70 group-hover:opacity-100 group-hover:translate-x-1.5 
