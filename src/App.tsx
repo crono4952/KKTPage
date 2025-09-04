@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
 import { Menu, X, Diamond, Star, Zap, Globe, ArrowRight, Mail, Phone, MapPin, Languages } from 'lucide-react';
 import { HeroGeometric } from '@/components/ui/shape-landing-hero';
+import { BookingForm } from '@/components/BookingForm';
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [language, setLanguage] = useState<'en' | 'fr'>('en');
+  const [showBookingForm, setShowBookingForm] = useState(false);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -13,6 +15,18 @@ function App() {
   const toggleLanguage = () => {
     setLanguage(language === 'en' ? 'fr' : 'en');
   };
+
+  const handleBookCall = () => {
+    setShowBookingForm(true);
+  };
+
+  const handleBackToMain = () => {
+    setShowBookingForm(false);
+  };
+
+  if (showBookingForm) {
+    return <BookingForm onBack={handleBackToMain} language={language} />;
+  }
 
   const content = {
     en: {
@@ -581,7 +595,10 @@ function App() {
             <p className="text-xl text-stone-300 max-w-2xl mx-auto">
               {t.cta.subtitle}
             </p>
-            <button className="group bg-amber-500 text-stone-800 px-10 py-5 rounded-lg font-bold text-lg hover:bg-amber-400 transition-all duration-300 shadow-lg hover:shadow-xl flex items-center justify-center space-x-3 mx-auto">
+            <button 
+              onClick={handleBookCall}
+              className="group bg-amber-500 text-stone-800 px-10 py-5 rounded-lg font-bold text-lg hover:bg-amber-400 transition-all duration-300 shadow-lg hover:shadow-xl flex items-center justify-center space-x-3 mx-auto"
+            >
               <span>{t.cta.button}</span>
               <ArrowRight className="w-6 h-6 group-hover:translate-x-2 transition-transform" />
             </button>
@@ -661,7 +678,10 @@ function App() {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <button className="group bg-stone-800 text-white px-10 py-5 rounded-lg font-bold text-lg hover:bg-stone-700 transition-all duration-300 shadow-lg hover:shadow-xl flex items-center justify-center space-x-3">
+              <button 
+                onClick={handleBookCall}
+                className="group bg-stone-800 text-white px-10 py-5 rounded-lg font-bold text-lg hover:bg-stone-700 transition-all duration-300 shadow-lg hover:shadow-xl flex items-center justify-center space-x-3"
+              >
                 <Phone className="w-6 h-6" />
                 <span>{t.bookCall.button}</span>
                 <ArrowRight className="w-6 h-6 group-hover:translate-x-2 transition-transform" />
