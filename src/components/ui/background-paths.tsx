@@ -71,6 +71,22 @@ export function BackgroundPaths({
                     transition={{ duration: 2 }}
                     className="max-w-4xl mx-auto"
                 >
+                    <motion.div
+                        initial={{ opacity: 0, y: 30 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 1, delay: 0.3 }}
+                        className="inline-flex items-center gap-3 px-6 py-3 rounded-full bg-white/[0.03] border border-white/[0.08] mb-8 md:mb-12"
+                    >
+                        <img 
+                            src="/KKT Logo 2.jpg" 
+                            alt="KKT Network Logo" 
+                            className="h-12 w-12 rounded-full object-cover"
+                        />
+                        <span className="text-lg text-white/60 tracking-wide font-medium">
+                            KKT Network
+                        </span>
+                    </motion.div>
+
                     <h1 className="text-5xl sm:text-7xl md:text-8xl font-bold mb-8 tracking-tighter">
                         {words.map((word, wordIndex) => (
                             <span
