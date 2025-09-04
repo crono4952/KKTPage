@@ -9,7 +9,6 @@ interface FormData {
   companyName: string;
   problems: string;
   additionalInfo: string;
-  privacyAgreed: boolean;
 }
 
 interface BookingFormProps {
@@ -25,7 +24,6 @@ export function BookingForm({ onBack, language }: BookingFormProps) {
     companyName: '',
     problems: '',
     additionalInfo: '',
-    privacyAgreed: false
   });
 
   const [errors, setErrors] = useState<Partial<FormData>>({});
@@ -54,7 +52,6 @@ export function BookingForm({ onBack, language }: BookingFormProps) {
         problemsPlaceholder: "Describe the challenges your business is facing and how we can help...",
         additional: "Additional Information",
         additionalPlaceholder: "Any additional details about your project or specific requirements...",
-        privacy: "I agree to the privacy policy and terms of service",
         submit: "Submit Request",
         submitting: "Submitting..."
       },
@@ -75,7 +72,6 @@ export function BookingForm({ onBack, language }: BookingFormProps) {
         emailInvalid: "Please enter a valid email address",
         serviceRequired: "Please select a service",
         problemsRequired: "Please describe the problems you're looking to solve",
-        privacyRequired: "Please agree to the privacy policy"
       }
     },
     fr: {
@@ -99,7 +95,6 @@ export function BookingForm({ onBack, language }: BookingFormProps) {
         problemsPlaceholder: "Décrivez les défis auxquels votre entreprise fait face et comment nous pouvons aider...",
         additional: "Informations Supplémentaires",
         additionalPlaceholder: "Tout détail supplémentaire sur votre projet ou exigences spécifiques...",
-        privacy: "J'accepte la politique de confidentialité et les conditions de service",
         submit: "Soumettre la Demande",
         submitting: "Soumission..."
       },
@@ -120,7 +115,6 @@ export function BookingForm({ onBack, language }: BookingFormProps) {
         emailInvalid: "Veuillez entrer une adresse email valide",
         serviceRequired: "Veuillez sélectionner un service",
         problemsRequired: "Veuillez décrire les problèmes que vous cherchez à résoudre",
-        privacyRequired: "Veuillez accepter la politique de confidentialité"
       }
     }
   };
@@ -148,9 +142,6 @@ export function BookingForm({ onBack, language }: BookingFormProps) {
       newErrors.problems = t.errors.problemsRequired;
     }
 
-    if (!formData.privacyAgreed) {
-      newErrors.privacyAgreed = t.errors.privacyRequired;
-    }
 
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
@@ -377,26 +368,6 @@ export function BookingForm({ onBack, language }: BookingFormProps) {
                   />
                 </div>
 
-                {/* Privacy Agreement */}
-                <div>
-                  <label className="flex items-start space-x-3 cursor-pointer">
-                    <input
-                      type="checkbox"
-                      checked={formData.privacyAgreed}
-                      onChange={(e) => handleInputChange('privacyAgreed', e.target.checked)}
-                      className="mt-1 w-4 h-4 text-amber-600 border-stone-300 rounded focus:ring-amber-500"
-                    />
-                    <span className={`text-sm ${errors.privacyAgreed ? 'text-red-600' : 'text-stone-600'}`}>
-                      {t.form.privacy} <span className="text-red-500">*</span>
-                    </span>
-                  </label>
-                  {errors.privacyAgreed && (
-                    <div className="flex items-center space-x-2 mt-2 text-red-600">
-                      <AlertCircle className="w-4 h-4" />
-                      <span className="text-sm">{errors.privacyAgreed}</span>
-                    </div>
-                  )}
-                </div>
 
                 {/* Submit Button */}
                 <button
