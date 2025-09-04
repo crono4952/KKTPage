@@ -406,7 +406,7 @@ export function BookingForm({ onBack, language }: BookingFormProps) {
               <h3 className="text-xl font-semibold text-stone-800 mb-4">{t.contact.title}</h3>
               <div className="space-y-4">
                 <div className="flex items-center space-x-3">
-                  <div className="w-10 h-10 bg-amber-100 rounded-full flex items-center justify-center">
+                  <div className="w-10 h-10 bg-amber-100 rounded-full flex items-center justify-center flex-shrink-0">
                     <Phone className="w-5 h-5 text-stone-800" />
                   </div>
                   <div>
@@ -414,7 +414,7 @@ export function BookingForm({ onBack, language }: BookingFormProps) {
                   </div>
                 </div>
                 <div className="flex items-center space-x-3">
-                  <div className="w-10 h-10 bg-amber-100 rounded-full flex items-center justify-center">
+                  <div className="w-10 h-10 bg-amber-100 rounded-full flex items-center justify-center flex-shrink-0">
                     <Mail className="w-5 h-5 text-stone-800" />
                   </div>
                   <div>
@@ -422,7 +422,7 @@ export function BookingForm({ onBack, language }: BookingFormProps) {
                   </div>
                 </div>
                 <div className="flex items-center space-x-3">
-                  <div className="w-10 h-10 bg-amber-100 rounded-full flex items-center justify-center">
+                  <div className="w-10 h-10 bg-amber-100 rounded-full flex items-center justify-center flex-shrink-0">
                     <Clock className="w-5 h-5 text-stone-800" />
                   </div>
                   <div>
