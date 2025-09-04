@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Menu, X, Star, Zap, Palette, Smartphone, Globe, ArrowRight, Mail, Phone, MapPin, Languages } from 'lucide-react';
+import { Menu, X, Diamond, Zap, Globe, ArrowRight, Mail, Phone, MapPin, Languages } from 'lucide-react';
 import { HeroGeometric } from '@/components/ui/shape-landing-hero';
 
 function App() {
