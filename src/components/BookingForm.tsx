@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { ArrowLeft, Send, CheckCircle, AlertCircle, Phone, Mail, Clock } from 'lucide-react';
+import { supabase, type ConsultationRequest } from '@/lib/supabase';
 
 interface FormData {
   name: string;
@@ -164,12 +165,31 @@ export function BookingForm({ onBack, language }: BookingFormProps) {
 
     setIsSubmitting(true);
 
-    // Simulate form submission
     try {
-      await new Promise(resolve => setTimeout(resolve, 2000));
+      const consultationData: Omit<ConsultationRequest, 'id' | 'created_at' | 'updated_at'> = {
+        name: formData.name.trim(),
+        email: formData.email.trim(),
+        selected_service: formData.selectedService,
+        company_name: formData.companyName.trim() || null,
+        problems: formData.problems.trim(),
+        additional_info: formData.additionalInfo.trim() || null,
+        language: language
+      };
+
+      const { error } = await supabase
+        .from('consultation_requests')
+        .insert([consultationData]);
+
+      if (error) {
+        console.error('Error submitting consultation request:', error);
+        // You could add error handling UI here
+        return;
+      }
+
       setIsSubmitted(true);
     } catch (error) {
       console.error('Form submission error:', error);
+      // You could add error handling UI here
     } finally {
       setIsSubmitting(false);
     }
