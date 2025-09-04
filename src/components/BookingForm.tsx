@@ -433,25 +433,25 @@ export function BookingForm({ onBack, language }: BookingFormProps) {
             </div>
 
             <div className="bg-gradient-to-br from-stone-800 to-stone-900 rounded-2xl p-6 text-white">
-              <h4 className="font-semibold mb-3">What happens next?</h4>
+              <h3 className="text-xl font-semibold text-white mb-4">What happens next?</h3>
               <div className="space-y-3 text-sm">
                 <div className="flex items-start space-x-3">
                   <div className="w-6 h-6 bg-amber-400 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
                     <span className="text-stone-800 font-bold text-xs">1</span>
                   </div>
-                  <p className="text-stone-300">Your project requirements get reviewed</p>
+                  <p className="text-sm text-stone-300">Your project requirements get reviewed</p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <div className="w-6 h-6 bg-amber-400 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
                     <span className="text-stone-800 font-bold text-xs">2</span>
                   </div>
-                  <p className="text-stone-300">A customized proposal gets prepared</p>
+                  <p className="text-sm text-stone-300">A customized proposal gets prepared</p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <div className="w-6 h-6 bg-amber-400 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
                     <span className="text-stone-800 font-bold text-xs">3</span>
                   </div>
-                  <p className="text-stone-300">A consultation call gets scheduled</p>
+                  <p className="text-sm text-stone-300">A consultation call gets scheduled</p>
                 </div>
               </div>
             </div>
