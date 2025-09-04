@@ -358,7 +358,7 @@ function App() {
                   {language === 'en' ? 'FR' : 'EN'}
                 </span>
               </button>
-            </nav>
+            </div>
 
             {/* Mobile Menu Button */}
             <button
@@ -607,12 +607,6 @@ function App() {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {[
-              {
-                name: "Sarah Johnson",
-                role: "Owner, Johnson's Bakery",
-                content: "KKT Network built us a beautiful website and added an AI chatbot that takes orders 24/7. We're getting customers even when we're closed! Our online orders increased by 400% in just two months.",
-                rating: 5
             {t.testimonials.testimonialList.map((testimonial, index) => (
               <div key={index} className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20 hover:bg-white/15 transition-all duration-300">
                 <div className="flex items-center mb-4">
