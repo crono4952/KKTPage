@@ -724,18 +724,18 @@ function App() {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-20 bg-stone-50">
+      <section id="contact" className="py-20 bg-stone-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <div className="flex items-center justify-center space-x-2 text-amber-600 mb-4">
+            <div className="flex items-center justify-center space-x-2 text-amber-400 mb-4">
               <Star className="w-5 h-5 fill-current" />
               <span className="text-sm font-medium uppercase tracking-wider">{t.contact.badge}</span>
               <Star className="w-5 h-5 fill-current" />
             </div>
-            <h2 className="text-3xl sm:text-4xl font-bold text-stone-800 mb-4">
+            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
               {t.contact.title}
             </h2>
-            <p className="text-lg text-stone-600 max-w-2xl mx-auto">
+            <p className="text-lg text-stone-300 max-w-2xl mx-auto">
               {t.contact.subtitle}
             </p>
           </div>
@@ -744,12 +744,12 @@ function App() {
             <div className="space-y-8">
               <div className="space-y-6">
                 <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center flex-shrink-0">
+                  <div className="w-12 h-12 bg-amber-400 rounded-full flex items-center justify-center flex-shrink-0">
                     <Mail className="w-6 h-6 text-stone-800" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-stone-800 mb-1">{t.contact.email}</h3>
-                    <p className="text-stone-600">info@kktnetwork.com</p>
+                    <h3 className="font-semibold text-white mb-1">{t.contact.email}</h3>
+                    <p className="text-stone-300">info@kktnetwork.com</p>
                   </div>
                 </div>
               </div>
