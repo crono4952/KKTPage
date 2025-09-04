@@ -483,12 +483,12 @@ function App() {
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-r from-amber-400/20 to-stone-600/20 rounded-3xl blur-2xl"></div>
               <div className="relative bg-white/10 backdrop-blur-sm rounded-3xl p-4 md:p-6 border border-white/20 max-w-xs mx-auto">
-                <div className="space-y-6 flex flex-col items-center">
+                <div className="space-y-6 flex flex-col items-start">
                   <div className="flex items-center justify-center space-x-4">
                     <div className="w-12 h-12 bg-amber-400 rounded-full flex items-center justify-center">
                       <Star className="w-6 h-6 text-stone-800 fill-current" />
                     </div>
-                    <div className="text-center">
+                    <div className="text-left">
                       <h4 className="font-semibold text-white">{t.about.excellence}</h4>
                       <p className="text-stone-300 text-sm">{t.about.excellenceDesc}</p>
                     </div>
@@ -497,7 +497,7 @@ function App() {
                     <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center">
                       <Zap className="w-6 h-6 text-stone-800" />
                     </div>
-                    <div className="text-center">
+                    <div className="text-left">
                       <h4 className="font-semibold text-white">{t.about.integration}</h4>
                       <p className="text-stone-300 text-sm">{t.about.integrationDesc}</p>
                     </div>
@@ -506,7 +506,7 @@ function App() {
                     <div className="w-12 h-12 bg-amber-400 rounded-full flex items-center justify-center">
                       <Globe className="w-6 h-6 text-stone-800" />
                     </div>
-                    <div className="text-center">
+                    <div className="text-left">
                       <h4 className="font-semibold text-white">{t.about.solutions}</h4>
                       <p className="text-stone-300 text-sm">{t.about.solutionsDesc}</p>
                     </div>
