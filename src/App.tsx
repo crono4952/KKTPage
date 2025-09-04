@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Menu, X, Diamond, Star, Zap, Globe, ArrowRight, Mail, Phone, MapPin, Languages } from 'lucide-react';
-import { HeroGeometric } from '@/components/ui/shape-landing-hero';
+import { BackgroundPaths } from '@/components/ui/background-paths';
 import { BookingForm } from '@/components/BookingForm';
 
 function App() {
@@ -423,10 +423,9 @@ function App() {
 
       {/* Hero Section */}
       <section id="home" className="pt-16">
-        <HeroGeometric 
-          title1={t.hero.title1}
-          title2={t.hero.title2}
-        />
+        <div className="absolute inset-0 overflow-hidden">
+          <BackgroundPaths title={`${t.hero.title1} ${t.hero.title2}`} />
+        </div>
       </section>
 
       {/* Services Section */}
