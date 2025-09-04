@@ -820,7 +820,7 @@ function App() {
                 <span className="text-xl font-bold">KKT Network</span>
               </div>
               <p className="text-stone-400 mb-4 max-w-md">
-                Building professional websites and intelligent AI chatbots that work 24/7 to grow your business and delight your customers.
+                {t.footer.description}
               </p>
               <div className="flex space-x-4">
                 {[1, 2, 3, 4].map((i) => (
