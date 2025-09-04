@@ -606,7 +606,7 @@ function App() {
             </p>
             <button 
               onClick={handleBookCall}
-              className="group bg-stone-800 text-white px-10 py-5 rounded-lg font-bold text-lg hover:bg-stone-700 transition-all duration-300 shadow-lg hover:shadow-xl flex items-center justify-center space-x-3 mx-auto"
+              className="group bg-white/[0.03] text-white/60 hover:text-white px-10 py-5 rounded-lg font-bold text-lg hover:bg-white/[0.08] transition-all duration-300 shadow-lg hover:shadow-xl flex items-center justify-center space-x-3 mx-auto border border-white/[0.08]"
             >
               <span>{t.cta.button}</span>
               <ArrowRight className="w-6 h-6 group-hover:translate-x-2 transition-transform" />
