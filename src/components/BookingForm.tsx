@@ -402,7 +402,7 @@ export function BookingForm({ onBack, language }: BookingFormProps) {
 
           {/* Contact Information Sidebar */}
           <div className="space-y-6">
-            <div className="bg-white rounded-2xl p-6 shadow-lg">
+            <div className="bg-white rounded-2xl p-6 shadow-lg min-w-[280px]">
               <h3 className="text-xl font-semibold text-stone-800 mb-4">{t.contact.title}</h3>
               <div className="space-y-4">
                 <div className="flex items-center space-x-3">
