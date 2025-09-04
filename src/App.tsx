@@ -423,7 +423,7 @@ function App() {
 
       {/* Hero Section */}
       <section id="home" className="relative">
-        <BackgroundPaths title={`${t.hero.title1} ${t.hero.title2}`} />
+        <BackgroundPaths title={`${t.hero.title1} ${t.hero.title2}`} language={language} />
       </section>
 
       {/* Services Section */}

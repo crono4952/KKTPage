@@ -52,8 +52,10 @@ function FloatingPaths({ position }: { position: number }) {
 
 export function BackgroundPaths({
     title = "Background Paths",
+    language = "en",
 }: {
     title?: string;
+    language?: "en" | "fr";
 }) {
     const words = title.split(" ");
 
