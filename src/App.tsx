@@ -362,6 +362,15 @@ function App() {
                 <a href="#contact" className="text-stone-700 hover:text-amber-600 transition-colors font-medium">{t.nav.contact}</a>
               </nav>
               
+              {/* Book a Call Button */}
+              <button
+                onClick={handleBookCall}
+                className="hidden md:flex items-center space-x-2 bg-amber-500 text-stone-800 px-4 py-2 rounded-lg font-semibold hover:bg-amber-400 transition-all duration-300 shadow-md hover:shadow-lg"
+              >
+                <Phone className="w-4 h-4" />
+                <span>{language === 'en' ? 'Book a Call' : 'Réserver un Appel'}</span>
+              </button>
+              
               {/* Language Toggle */}
               <button
                 onClick={toggleLanguage}
@@ -393,6 +402,13 @@ function App() {
                 <a href="#portfolio" className="px-4 py-2 text-stone-700 hover:text-amber-600 transition-colors">{t.nav.portfolio}</a>
                 <a href="#contact" className="px-4 py-2 text-stone-700 hover:text-amber-600 transition-colors">{t.nav.contact}</a>
                 <div className="px-4 py-2">
+                  <button
+                    onClick={handleBookCall}
+                    className="w-full mb-3 flex items-center justify-center space-x-2 bg-amber-500 text-stone-800 px-4 py-2 rounded-lg font-semibold hover:bg-amber-400 transition-all duration-300"
+                  >
+                    <Phone className="w-4 h-4" />
+                    <span>{language === 'en' ? 'Book a Call' : 'Réserver un Appel'}</span>
+                  </button>
                   <button
                     onClick={toggleLanguage}
                     className="flex items-center space-x-2 px-3 py-2 rounded-lg bg-stone-100 hover:bg-stone-200 transition-colors"
