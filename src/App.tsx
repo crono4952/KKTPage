@@ -616,31 +616,31 @@ function App() {
       </section>
 
       {/* Testimonials Section */}
-      <section className="py-20 bg-stone-800">
+      <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <div className="flex items-center justify-center space-x-2 text-amber-400 mb-4">
+            <div className="flex items-center justify-center space-x-2 text-amber-600 mb-4">
               <Star className="w-5 h-5 fill-current" />
               <span className="text-sm font-medium uppercase tracking-wider">{t.testimonials.badge}</span>
               <Star className="w-5 h-5 fill-current" />
             </div>
-            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
+            <h2 className="text-3xl sm:text-4xl font-bold text-stone-800 mb-4">
               {t.testimonials.title}
             </h2>
-            <p className="text-lg text-stone-300 max-w-2xl mx-auto">
+            <p className="text-lg text-stone-600 max-w-2xl mx-auto">
               {t.testimonials.subtitle}
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {t.testimonials.testimonialList.map((testimonial, index) => (
-              <div key={index} className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20 hover:bg-white/15 transition-all duration-300">
+              <div key={index} className="bg-stone-50 rounded-2xl p-8 border border-stone-200 hover:bg-stone-100 transition-all duration-300">
                 <div className="flex items-center mb-4">
                   {[...Array(5)].map((_, i) => (
                     <Star key={i} className="w-5 h-5 text-amber-400 fill-current" />
                   ))}
                 </div>
-                <p className="text-stone-200 mb-6 leading-relaxed">
+                <p className="text-stone-600 mb-6 leading-relaxed">
                   "{testimonial.content}"
                 </p>
                 <div className="flex items-center space-x-4">
@@ -650,8 +650,8 @@ function App() {
                     </span>
                   </div>
                   <div>
-                    <div className="font-semibold text-white">{testimonial.name}</div>
-                    <div className="text-stone-400 text-sm">{testimonial.role}</div>
+                    <div className="font-semibold text-stone-800">{testimonial.name}</div>
+                    <div className="text-stone-500 text-sm">{testimonial.role}</div>
                   </div>
                 </div>
               </div>
@@ -659,30 +659,30 @@ function App() {
           </div>
 
           <div className="text-center mt-12">
-            <div className="inline-flex items-center space-x-2 bg-white/10 backdrop-blur-sm rounded-full px-6 py-3 border border-white/20">
+            <div className="inline-flex items-center space-x-2 bg-stone-100 rounded-full px-6 py-3 border border-stone-200">
               <Star className="w-5 h-5 text-amber-400 fill-current" />
-              <span className="text-white font-medium">4.9/5 {t.testimonials.rating}</span>
-              <span className="text-stone-300">•</span>
-              <span className="text-stone-300">150+ {t.testimonials.clients}</span>
+              <span className="text-stone-800 font-medium">4.9/5 {t.testimonials.rating}</span>
+              <span className="text-stone-500">•</span>
+              <span className="text-stone-500">150+ {t.testimonials.clients}</span>
             </div>
           </div>
         </div>
       </section>
 
       {/* Book a Call Section */}
-      <section className="py-20 bg-gradient-to-r from-amber-50 to-stone-100">
+      <section className="py-20 bg-stone-800">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="space-y-8">
-            <div className="flex items-center justify-center space-x-2 text-amber-600 mb-4">
+            <div className="flex items-center justify-center space-x-2 text-amber-400 mb-4">
               <Star className="w-5 h-5 fill-current" />
               <span className="text-sm font-medium uppercase tracking-wider">{t.bookCall.badge}</span>
               <Star className="w-5 h-5 fill-current" />
             </div>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-stone-800 leading-tight">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight">
               {t.bookCall.title1}
-              <span className="block text-amber-600">{t.bookCall.title2}</span>
+              <span className="block text-amber-400">{t.bookCall.title2}</span>
             </h2>
-            <p className="text-xl text-stone-600 max-w-2xl mx-auto leading-relaxed">
+            <p className="text-xl text-stone-300 max-w-2xl mx-auto leading-relaxed">
               {t.bookCall.subtitle}
             </p>
             
@@ -698,25 +698,25 @@ function App() {
             
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-12 max-w-2xl mx-auto">
               <div className="text-center">
-                <div className="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                <div className="w-12 h-12 bg-amber-400 rounded-full flex items-center justify-center mx-auto mb-3">
                   <Globe className="w-6 h-6 text-stone-800" />
                 </div>
-                <h4 className="font-semibold text-stone-800 mb-1">{t.bookCall.analysis}</h4>
-                <p className="text-sm text-stone-600">{t.bookCall.analysisDesc}</p>
+                <h4 className="font-semibold text-white mb-1">{t.bookCall.analysis}</h4>
+                <p className="text-sm text-stone-300">{t.bookCall.analysisDesc}</p>
               </div>
               <div className="text-center">
-                <div className="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                <div className="w-12 h-12 bg-amber-400 rounded-full flex items-center justify-center mx-auto mb-3">
                   <Zap className="w-6 h-6 text-stone-800" />
                 </div>
-                <h4 className="font-semibold text-stone-800 mb-1">{t.bookCall.demo}</h4>
-                <p className="text-sm text-stone-600">{t.bookCall.demoDesc}</p>
+                <h4 className="font-semibold text-white mb-1">{t.bookCall.demo}</h4>
+                <p className="text-sm text-stone-300">{t.bookCall.demoDesc}</p>
               </div>
               <div className="text-center">
-                <div className="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                <div className="w-12 h-12 bg-amber-400 rounded-full flex items-center justify-center mx-auto mb-3">
                   <Star className="w-6 h-6 text-stone-800 fill-current" />
                 </div>
-                <h4 className="font-semibold text-stone-800 mb-1">{t.bookCall.custom}</h4>
-                <p className="text-sm text-stone-600">{t.bookCall.customDesc}</p>
+                <h4 className="font-semibold text-white mb-1">{t.bookCall.custom}</h4>
+                <p className="text-sm text-stone-300">{t.bookCall.customDesc}</p>
               </div>
             </div>
           </div>
