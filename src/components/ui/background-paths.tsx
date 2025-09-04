@@ -130,8 +130,8 @@ export function BackgroundPaths({
                                 }
                             }}
                             className="rounded-[1.15rem] px-8 py-6 text-lg font-semibold backdrop-blur-md 
-                            bg-black/95 hover:bg-black/100 
-                            text-white transition-all duration-300 
+                            bg-white/[0.03] hover:bg-white/[0.08] border border-white/[0.08]
+                            text-white/60 hover:text-white transition-all duration-300 
                             group-hover:-translate-y-0.5 border border-white/10
                             hover:shadow-md hover:shadow-neutral-800/50"
                         >
