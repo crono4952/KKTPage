@@ -423,9 +423,7 @@ function App() {
 
       {/* Hero Section */}
       <section id="home" className="relative">
-        <div className="absolute inset-0 overflow-hidden">
-          <BackgroundPaths title={`${t.hero.title1} ${t.hero.title2}`} />
-        </div>
+        <BackgroundPaths title={`${t.hero.title1} ${t.hero.title2}`} />
       </section>
 
       {/* Services Section */}
