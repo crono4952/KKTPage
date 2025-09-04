@@ -458,6 +458,6 @@ export function BookingForm({ onBack, language }: BookingFormProps) {
           </div>
         </div>
       </div>
-    );
-  }
+    </div>
+  );
 }
