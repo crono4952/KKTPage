@@ -434,10 +434,10 @@ function App() {
               }
             ].map((service, index) => (
               <div key={index} className="group bg-stone-50 rounded-2xl p-12 hover:bg-stone-800 transition-all duration-300 hover:shadow-xl text-center">
-                <div className="text-amber-600 group-hover:text-amber-400 mb-4 transition-colors">
+                <div className="text-amber-600 group-hover:text-amber-400 mb-6 transition-colors flex justify-center">
                   {service.icon}
                 </div>
-                <h3 className="text-2xl font-semibold text-stone-800 group-hover:text-white mb-4 transition-colors">
+                <h3 className="text-2xl font-semibold text-stone-800 group-hover:text-white mb-6 transition-colors">
                   {service.title}
                 </h3>
                 <p className="text-stone-600 group-hover:text-stone-300 transition-colors text-lg leading-relaxed">
