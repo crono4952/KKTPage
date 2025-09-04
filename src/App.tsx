@@ -689,7 +689,7 @@ function App() {
             <div className="flex justify-center">
               <button 
                 onClick={handleBookCall}
-                className="group bg-stone-800 text-white px-10 py-5 rounded-lg font-bold text-lg hover:bg-stone-700 transition-all duration-300 shadow-lg hover:shadow-xl flex items-center justify-center space-x-3"
+                className="group bg-amber-500 text-stone-800 px-10 py-5 rounded-lg font-bold text-lg hover:bg-amber-400 transition-all duration-300 shadow-lg hover:shadow-xl flex items-center justify-center space-x-3"
               >
                 <span>{t.bookCall.button}</span>
                 <ArrowRight className="w-6 h-6 group-hover:translate-x-2 transition-transform" />
