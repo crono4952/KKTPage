@@ -488,7 +488,7 @@ function App() {
                     <div className="w-12 h-12 bg-amber-400 rounded-full flex items-center justify-center">
                       <Star className="w-6 h-6 text-stone-800 fill-current" />
                     </div>
-                    <div>
+                    <div className="text-center">
                       <h4 className="font-semibold text-white">{t.about.excellence}</h4>
                       <p className="text-stone-300 text-sm">{t.about.excellenceDesc}</p>
                     </div>
@@ -497,7 +497,7 @@ function App() {
                     <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center">
                       <Zap className="w-6 h-6 text-stone-800" />
                     </div>
-                    <div>
+                    <div className="text-center">
                       <h4 className="font-semibold text-white">{t.about.integration}</h4>
                       <p className="text-stone-300 text-sm">{t.about.integrationDesc}</p>
                     </div>
@@ -506,7 +506,7 @@ function App() {
                     <div className="w-12 h-12 bg-amber-400 rounded-full flex items-center justify-center">
                       <Globe className="w-6 h-6 text-stone-800" />
                     </div>
-                    <div>
+                    <div className="text-center">
                       <h4 className="font-semibold text-white">{t.about.solutions}</h4>
                       <p className="text-stone-300 text-sm">{t.about.solutionsDesc}</p>
                     </div>
