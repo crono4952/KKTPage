@@ -422,14 +422,14 @@ function App() {
       </header>
 
       {/* Hero Section */}
-      <section id="home" className="pt-16">
+      <section id="home" className="relative">
         <div className="absolute inset-0 overflow-hidden">
           <BackgroundPaths title={`${t.hero.title1} ${t.hero.title2}`} />
         </div>
       </section>
 
       {/* Services Section */}
-      <section id="services" className="py-20 bg-white">
+      <section id="services" className="relative py-20 bg-white z-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <div className="flex items-center justify-center space-x-2 text-amber-600 mb-4">
