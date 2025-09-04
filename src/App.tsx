@@ -686,18 +686,14 @@ function App() {
               {t.bookCall.subtitle}
             </p>
             
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <div className="flex justify-center">
               <button 
                 onClick={handleBookCall}
-                className="group bg-stone-800 text-white px-10 py-5 rounded-lg font-bold text-lg hover:bg-stone-700 transition-all duration-300 shadow-lg hover:shadow-xl flex items-center justify-center space-x-3 mx-auto"
+                className="group bg-stone-800 text-white px-10 py-5 rounded-lg font-bold text-lg hover:bg-stone-700 transition-all duration-300 shadow-lg hover:shadow-xl flex items-center justify-center space-x-3"
               >
                 <span>{t.bookCall.button}</span>
                 <ArrowRight className="w-6 h-6 group-hover:translate-x-2 transition-transform" />
               </button>
-              <div className="flex items-center space-x-2 text-stone-600">
-                <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
-                <span className="text-sm font-medium">{t.bookCall.available}</span>
-              </div>
             </div>
             
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-12 max-w-2xl mx-auto">
