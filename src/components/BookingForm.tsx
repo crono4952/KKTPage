@@ -433,6 +433,7 @@ export function BookingForm({ onBack, language }: BookingFormProps) {
             </div>
 
             <div className="bg-gradient-to-br from-stone-800 to-stone-900 rounded-2xl p-6 text-white">
+            <div className="bg-gradient-to-br from-stone-800 to-stone-900 rounded-2xl p-6 text-white min-w-[280px]">
               <h4 className="font-semibold mb-3">What happens next?</h4>
               <div className="space-y-3 text-sm">
                 <div className="flex items-start space-x-3">
