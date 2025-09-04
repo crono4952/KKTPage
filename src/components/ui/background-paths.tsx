@@ -123,6 +123,12 @@ export function BackgroundPaths({
                     >
                         <Button
                             variant="ghost"
+                            onClick={() => {
+                                const servicesSection = document.getElementById('services');
+                                if (servicesSection) {
+                                    servicesSection.scrollIntoView({ behavior: 'smooth' });
+                                }
+                            }}
                             className="rounded-[1.15rem] px-8 py-6 text-lg font-semibold backdrop-blur-md 
                             bg-black/95 hover:bg-black/100 
                             text-white transition-all duration-300 
