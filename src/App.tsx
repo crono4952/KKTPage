@@ -1,13 +1,327 @@
 import React, { useState } from 'react';
-import { Menu, X, Star, Zap, Palette, Smartphone, Globe, ArrowRight, Mail, Phone, MapPin } from 'lucide-react';
+import { Menu, X, Star, Zap, Palette, Smartphone, Globe, ArrowRight, Mail, Phone, MapPin, Languages } from 'lucide-react';
 import { HeroGeometric } from '@/components/ui/shape-landing-hero';
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [language, setLanguage] = useState<'en' | 'fr'>('en');
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
+
+  const toggleLanguage = () => {
+    setLanguage(language === 'en' ? 'fr' : 'en');
+  };
+
+  const content = {
+    en: {
+      nav: {
+        home: "Home",
+        services: "Services",
+        about: "About",
+        portfolio: "Portfolio",
+        contact: "Contact"
+      },
+      hero: {
+        title1: "Crafting Digital",
+        title2: "Experiences"
+      },
+      services: {
+        badge: "Our Services",
+        title: "Our Core Services",
+        subtitle: "We specialize in two essential services that transform how businesses connect with their customers online.",
+        service1: {
+          title: "Complete Website Creation",
+          description: "We build stunning, professional websites for any business from the ground up. Modern, responsive, and optimized for search engines to help you establish a powerful online presence."
+        },
+        service2: {
+          title: "24/7 AI Chatbot Integration",
+          description: "Smart AI chatbot agents that never sleep. Provide instant customer support, answer questions, and capture leads around the clock to grow your business automatically."
+        }
+      },
+      about: {
+        badge: "About KKT Network",
+        title: "Passionate About Digital Excellence",
+        description1: "At KKT Network, we specialize in two game-changing services that transform how businesses operate online. We create beautiful, professional websites from scratch and integrate intelligent AI chatbots that work 24/7 to serve your customers.",
+        description2: "Whether you're a startup needing your first website or an established business wanting to automate customer service, we provide the complete solution. Our websites are built to convert visitors into customers, while our AI chatbots ensure no inquiry goes unanswered.",
+        stat1: "Websites Built",
+        stat2: "AI Support",
+        excellence: "Creative Excellence",
+        excellenceDesc: "Award-winning designs",
+        integration: "AI Integration",
+        integrationDesc: "Smart chatbot solutions",
+        solutions: "Complete Solutions",
+        solutionsDesc: "Website + AI chatbot"
+      },
+      portfolio: {
+        badge: "Our Portfolio",
+        title: "Success Stories",
+        subtitle: "See how our websites and AI chatbots have helped businesses increase sales and improve customer satisfaction.",
+        projects: [
+          { title: "Local Restaurant Chain", category: "Website + AI Chatbot" },
+          { title: "Medical Practice", category: "Website + AI Assistant" },
+          { title: "Real Estate Agency", category: "Website + Lead Bot" },
+          { title: "Law Firm", category: "Website + FAQ Bot" },
+          { title: "E-commerce Store", category: "Website + Sales Bot" },
+          { title: "Fitness Studio", category: "Website + Booking Bot" }
+        ]
+      },
+      cta: {
+        title1: "Ready to Transform Your",
+        title2: "Digital Presence?",
+        subtitle: "Get a professional website and 24/7 AI customer support. Transform how your business connects with customers online.",
+        button: "Get Your Website + AI Bot"
+      },
+      testimonials: {
+        badge: "Client Testimonials",
+        title: "What Our Clients Say",
+        subtitle: "Don't just take our word for it. Here's what our satisfied clients have to say about working with KKT Network.",
+        rating: "Average Rating",
+        clients: "Happy Clients",
+        testimonialList: [
+          {
+            name: "Sarah Johnson",
+            role: "Owner, Johnson's Bakery",
+            content: "KKT Network built us a beautiful website and added an AI chatbot that takes orders 24/7. We're getting customers even when we're closed! Our online orders increased by 400% in just two months."
+          },
+          {
+            name: "Michael Chen",
+            role: "Dentist, Chen Family Dental",
+            content: "The AI chatbot answers patient questions instantly and books appointments automatically. Our staff can focus on patient care while the bot handles inquiries. It's like having a receptionist that never sleeps!"
+          },
+          {
+            name: "Emily Rodriguez",
+            role: "Real Estate Agent",
+            content: "My new website looks amazing and the AI chatbot qualifies leads automatically. I'm closing more deals because potential buyers get instant answers to their questions, even at midnight!"
+          },
+          {
+            name: "David Thompson",
+            role: "Attorney, Thompson & Associates",
+            content: "Our law firm's website now looks incredibly professional, and the AI chatbot handles initial client consultations perfectly. We're getting more qualified leads than ever before."
+          },
+          {
+            name: "Lisa Park",
+            role: "Fitness Studio Owner",
+            content: "The website showcases our classes beautifully, and the AI chatbot books memberships and answers questions about our programs instantly. Our conversion rate has tripled!"
+          },
+          {
+            name: "James Wilson",
+            role: "Restaurant Owner, Wilson's Grill",
+            content: "The AI chatbot takes reservations and answers menu questions 24/7. We never miss a booking now, and customers love getting instant responses. Our revenue has increased significantly!"
+          }
+        ]
+      },
+      bookCall: {
+        badge: "Ready to Get Started?",
+        title1: "Let's Discuss Your",
+        title2: "Next Project",
+        subtitle: "Schedule a free consultation to discuss your website needs and learn how a 24/7 AI chatbot can transform your customer service and boost your sales.",
+        button: "Book a Call",
+        available: "Available today",
+        analysis: "Website Analysis",
+        analysisDesc: "Free website audit",
+        demo: "AI Demo",
+        demoDesc: "See chatbot in action",
+        custom: "Custom Solutions",
+        customDesc: "Built for your business"
+      },
+      contact: {
+        badge: "Get In Touch",
+        title: "Let's Start a Conversation",
+        subtitle: "Ready to get a professional website and 24/7 AI customer support? Let's discuss how we can transform your business.",
+        email: "Email Us",
+        call: "Call Us",
+        visit: "Visit Us",
+        firstName: "First Name",
+        lastName: "Last Name",
+        projectType: "Project Type",
+        message: "Message",
+        messagePlaceholder: "Tell us about your business and what you'd like to achieve with your website and AI chatbot...",
+        sendMessage: "Send Message",
+        projectOptions: [
+          "New Website + AI Chatbot",
+          "Website Only",
+          "AI Chatbot Only",
+          "Website Redesign + AI Chatbot",
+          "Other"
+        ]
+      },
+      footer: {
+        description: "Building professional websites and intelligent AI chatbots that work 24/7 to grow your business and delight your customers.",
+        servicesTitle: "Services",
+        services: [
+          "Website Creation",
+          "AI Chatbot Integration",
+          "24/7 Customer Support",
+          "Lead Generation"
+        ],
+        companyTitle: "Company",
+        company: [
+          "About Us",
+          "Portfolio",
+          "Contact",
+          "Careers"
+        ],
+        copyright: "© 2025 KKT Network. All rights reserved. Crafted with",
+        copyrightEnd: "to help businesses thrive online."
+      }
+    },
+    fr: {
+      nav: {
+        home: "Accueil",
+        services: "Services",
+        about: "À Propos",
+        portfolio: "Portfolio",
+        contact: "Contact"
+      },
+      hero: {
+        title1: "Créer des Expériences",
+        title2: "Numériques"
+      },
+      services: {
+        badge: "Nos Services",
+        title: "Nos Services Principaux",
+        subtitle: "Nous nous spécialisons dans deux services essentiels qui transforment la façon dont les entreprises se connectent avec leurs clients en ligne.",
+        service1: {
+          title: "Création Complète de Site Web",
+          description: "Nous construisons des sites web magnifiques et professionnels pour toute entreprise à partir de zéro. Modernes, adaptatifs et optimisés pour les moteurs de recherche pour vous aider à établir une présence en ligne puissante."
+        },
+        service2: {
+          title: "Intégration de Chatbot IA 24/7",
+          description: "Agents chatbot IA intelligents qui ne dorment jamais. Fournissent un support client instantané, répondent aux questions et capturent des prospects 24h/24 pour faire croître votre entreprise automatiquement."
+        }
+      },
+      about: {
+        badge: "À Propos de KKT Network",
+        title: "Passionnés par l'Excellence Numérique",
+        description1: "Chez KKT Network, nous nous spécialisons dans deux services révolutionnaires qui transforment la façon dont les entreprises opèrent en ligne. Nous créons de beaux sites web professionnels à partir de zéro et intégrons des chatbots IA intelligents qui travaillent 24h/24 pour servir vos clients.",
+        description2: "Que vous soyez une startup ayant besoin de votre premier site web ou une entreprise établie souhaitant automatiser le service client, nous fournissons la solution complète. Nos sites web sont conçus pour convertir les visiteurs en clients, tandis que nos chatbots IA s'assurent qu'aucune demande ne reste sans réponse.",
+        stat1: "Sites Web Créés",
+        stat2: "Support IA",
+        excellence: "Excellence Créative",
+        excellenceDesc: "Designs primés",
+        integration: "Intégration IA",
+        integrationDesc: "Solutions chatbot intelligentes",
+        solutions: "Solutions Complètes",
+        solutionsDesc: "Site web + chatbot IA"
+      },
+      portfolio: {
+        badge: "Notre Portfolio",
+        title: "Histoires de Succès",
+        subtitle: "Découvrez comment nos sites web et chatbots IA ont aidé les entreprises à augmenter leurs ventes et améliorer la satisfaction client.",
+        projects: [
+          { title: "Chaîne de Restaurants Locaux", category: "Site Web + Chatbot IA" },
+          { title: "Cabinet Médical", category: "Site Web + Assistant IA" },
+          { title: "Agence Immobilière", category: "Site Web + Bot Prospects" },
+          { title: "Cabinet d'Avocats", category: "Site Web + Bot FAQ" },
+          { title: "Boutique E-commerce", category: "Site Web + Bot Ventes" },
+          { title: "Studio de Fitness", category: "Site Web + Bot Réservation" }
+        ]
+      },
+      cta: {
+        title1: "Prêt à Transformer Votre",
+        title2: "Présence Numérique?",
+        subtitle: "Obtenez un site web professionnel et un support client IA 24h/24. Transformez la façon dont votre entreprise se connecte avec les clients en ligne.",
+        button: "Obtenez Votre Site Web + Bot IA"
+      },
+      testimonials: {
+        badge: "Témoignages Clients",
+        title: "Ce Que Disent Nos Clients",
+        subtitle: "Ne nous croyez pas sur parole. Voici ce que nos clients satisfaits ont à dire sur leur collaboration avec KKT Network.",
+        rating: "Note Moyenne",
+        clients: "Clients Satisfaits",
+        testimonialList: [
+          {
+            name: "Sarah Johnson",
+            role: "Propriétaire, Boulangerie Johnson",
+            content: "KKT Network nous a construit un beau site web et ajouté un chatbot IA qui prend les commandes 24h/24. Nous recevons des clients même quand nous sommes fermés ! Nos commandes en ligne ont augmenté de 400% en seulement deux mois."
+          },
+          {
+            name: "Michael Chen",
+            role: "Dentiste, Dentaire Famille Chen",
+            content: "Le chatbot IA répond aux questions des patients instantanément et prend les rendez-vous automatiquement. Notre personnel peut se concentrer sur les soins aux patients pendant que le bot gère les demandes. C'est comme avoir une réceptionniste qui ne dort jamais !"
+          },
+          {
+            name: "Emily Rodriguez",
+            role: "Agent Immobilier",
+            content: "Mon nouveau site web est magnifique et le chatbot IA qualifie les prospects automatiquement. Je conclus plus d'affaires parce que les acheteurs potentiels obtiennent des réponses instantanées à leurs questions, même à minuit !"
+          },
+          {
+            name: "David Thompson",
+            role: "Avocat, Thompson & Associés",
+            content: "Le site web de notre cabinet d'avocats paraît incroyablement professionnel maintenant, et le chatbot IA gère parfaitement les consultations initiales des clients. Nous obtenons plus de prospects qualifiés que jamais."
+          },
+          {
+            name: "Lisa Park",
+            role: "Propriétaire Studio de Fitness",
+            content: "Le site web présente nos cours magnifiquement, et le chatbot IA réserve les adhésions et répond aux questions sur nos programmes instantanément. Notre taux de conversion a triplé !"
+          },
+          {
+            name: "James Wilson",
+            role: "Propriétaire Restaurant, Grill Wilson",
+            content: "Le chatbot IA prend les réservations et répond aux questions sur le menu 24h/24. Nous ne manquons jamais une réservation maintenant, et les clients adorent obtenir des réponses instantanées. Nos revenus ont considérablement augmenté !"
+          }
+        ]
+      },
+      bookCall: {
+        badge: "Prêt à Commencer?",
+        title1: "Discutons de Votre",
+        title2: "Prochain Projet",
+        subtitle: "Planifiez une consultation gratuite pour discuter de vos besoins de site web et découvrir comment un chatbot IA 24h/24 peut transformer votre service client et augmenter vos ventes.",
+        button: "Réserver un Appel",
+        available: "Disponible aujourd'hui",
+        analysis: "Analyse de Site Web",
+        analysisDesc: "Audit gratuit de site web",
+        demo: "Démo IA",
+        demoDesc: "Voir le chatbot en action",
+        custom: "Solutions Personnalisées",
+        customDesc: "Conçu pour votre entreprise"
+      },
+      contact: {
+        badge: "Contactez-Nous",
+        title: "Commençons une Conversation",
+        subtitle: "Prêt à obtenir un site web professionnel et un support client IA 24h/24? Discutons de la façon dont nous pouvons transformer votre entreprise.",
+        email: "Envoyez-nous un Email",
+        call: "Appelez-Nous",
+        visit: "Visitez-Nous",
+        firstName: "Prénom",
+        lastName: "Nom",
+        projectType: "Type de Projet",
+        message: "Message",
+        messagePlaceholder: "Parlez-nous de votre entreprise et de ce que vous aimeriez accomplir avec votre site web et chatbot IA...",
+        sendMessage: "Envoyer le Message",
+        projectOptions: [
+          "Nouveau Site Web + Chatbot IA",
+          "Site Web Seulement",
+          "Chatbot IA Seulement",
+          "Refonte Site Web + Chatbot IA",
+          "Autre"
+        ]
+      },
+      footer: {
+        description: "Construire des sites web professionnels et des chatbots IA intelligents qui travaillent 24h/24 pour faire croître votre entreprise et ravir vos clients.",
+        servicesTitle: "Services",
+        services: [
+          "Création de Site Web",
+          "Intégration Chatbot IA",
+          "Support Client 24/7",
+          "Génération de Prospects"
+        ],
+        companyTitle: "Entreprise",
+        company: [
+          "À Propos",
+          "Portfolio",
+          "Contact",
+          "Carrières"
+        ],
+        copyright: "© 2025 KKT Network. Tous droits réservés. Créé avec",
+        copyrightEnd: "pour aider les entreprises à prospérer en ligne."
+      }
+    }
+  };
+
+  const t = content[language];
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-amber-50 to-stone-100">
@@ -25,12 +339,25 @@ function App() {
             </div>
 
             {/* Desktop Navigation */}
-            <nav className="hidden md:flex space-x-8">
-              <a href="#home" className="text-stone-700 hover:text-amber-600 transition-colors font-medium">Home</a>
-              <a href="#services" className="text-stone-700 hover:text-amber-600 transition-colors font-medium">Services</a>
-              <a href="#about" className="text-stone-700 hover:text-amber-600 transition-colors font-medium">About</a>
-              <a href="#portfolio" className="text-stone-700 hover:text-amber-600 transition-colors font-medium">Portfolio</a>
-              <a href="#contact" className="text-stone-700 hover:text-amber-600 transition-colors font-medium">Contact</a>
+            <div className="flex items-center space-x-8">
+              <nav className="hidden md:flex space-x-8">
+                <a href="#home" className="text-stone-700 hover:text-amber-600 transition-colors font-medium">{t.nav.home}</a>
+                <a href="#services" className="text-stone-700 hover:text-amber-600 transition-colors font-medium">{t.nav.services}</a>
+                <a href="#about" className="text-stone-700 hover:text-amber-600 transition-colors font-medium">{t.nav.about}</a>
+                <a href="#portfolio" className="text-stone-700 hover:text-amber-600 transition-colors font-medium">{t.nav.portfolio}</a>
+                <a href="#contact" className="text-stone-700 hover:text-amber-600 transition-colors font-medium">{t.nav.contact}</a>
+              </nav>
+              
+              {/* Language Toggle */}
+              <button
+                onClick={toggleLanguage}
+                className="flex items-center space-x-2 px-3 py-2 rounded-lg bg-stone-100 hover:bg-stone-200 transition-colors"
+              >
+                <Languages className="w-4 h-4 text-stone-700" />
+                <span className="text-sm font-medium text-stone-700">
+                  {language === 'en' ? 'FR' : 'EN'}
+                </span>
+              </button>
             </nav>
 
             {/* Mobile Menu Button */}
@@ -46,11 +373,22 @@ function App() {
           {isMenuOpen && (
             <div className="md:hidden py-4 border-t border-stone-200">
               <nav className="flex flex-col space-y-2">
-                <a href="#home" className="px-4 py-2 text-stone-700 hover:text-amber-600 transition-colors">Home</a>
-                <a href="#services" className="px-4 py-2 text-stone-700 hover:text-amber-600 transition-colors">Services</a>
-                <a href="#about" className="px-4 py-2 text-stone-700 hover:text-amber-600 transition-colors">About</a>
-                <a href="#portfolio" className="px-4 py-2 text-stone-700 hover:text-amber-600 transition-colors">Portfolio</a>
-                <a href="#contact" className="px-4 py-2 text-stone-700 hover:text-amber-600 transition-colors">Contact</a>
+                <a href="#home" className="px-4 py-2 text-stone-700 hover:text-amber-600 transition-colors">{t.nav.home}</a>
+                <a href="#services" className="px-4 py-2 text-stone-700 hover:text-amber-600 transition-colors">{t.nav.services}</a>
+                <a href="#about" className="px-4 py-2 text-stone-700 hover:text-amber-600 transition-colors">{t.nav.about}</a>
+                <a href="#portfolio" className="px-4 py-2 text-stone-700 hover:text-amber-600 transition-colors">{t.nav.portfolio}</a>
+                <a href="#contact" className="px-4 py-2 text-stone-700 hover:text-amber-600 transition-colors">{t.nav.contact}</a>
+                <div className="px-4 py-2">
+                  <button
+                    onClick={toggleLanguage}
+                    className="flex items-center space-x-2 px-3 py-2 rounded-lg bg-stone-100 hover:bg-stone-200 transition-colors"
+                  >
+                    <Languages className="w-4 h-4 text-stone-700" />
+                    <span className="text-sm font-medium text-stone-700">
+                      {language === 'en' ? 'FR' : 'EN'}
+                    </span>
+                  </button>
+                </div>
               </nav>
             </div>
           )}
@@ -60,8 +398,8 @@ function App() {
       {/* Hero Section */}
       <section id="home" className="pt-16">
         <HeroGeometric 
-          title1="Crafting Digital"
-          title2="Experiences"
+          title1={t.hero.title1}
+          title2={t.hero.title2}
         />
       </section>
 
@@ -71,14 +409,14 @@ function App() {
           <div className="text-center mb-16">
             <div className="flex items-center justify-center space-x-2 text-amber-600 mb-4">
               <Star className="w-5 h-5 fill-current" />
-              <span className="text-sm font-medium uppercase tracking-wider">Our Services</span>
+              <span className="text-sm font-medium uppercase tracking-wider">{t.services.badge}</span>
               <Star className="w-5 h-5 fill-current" />
             </div>
             <h2 className="text-3xl sm:text-4xl font-bold text-stone-800 mb-4">
-              Our Core Services
+              {t.services.title}
             </h2>
             <p className="text-lg text-stone-600 max-w-2xl mx-auto">
-              We specialize in two essential services that transform how businesses connect with their customers online.
+              {t.services.subtitle}
             </p>
           </div>
 
@@ -86,13 +424,13 @@ function App() {
             {[
               {
                 icon: <Globe className="w-8 h-8" />,
-                title: "Complete Website Creation",
-                description: "We build stunning, professional websites for any business from the ground up. Modern, responsive, and optimized for search engines to help you establish a powerful online presence."
+                title: t.services.service1.title,
+                description: t.services.service1.description
               },
               {
                 icon: <Zap className="w-8 h-8" />,
-                title: "24/7 AI Chatbot Integration",
-                description: "Smart AI chatbot agents that never sleep. Provide instant customer support, answer questions, and capture leads around the clock to grow your business automatically."
+                title: t.services.service2.title,
+                description: t.services.service2.description
               }
             ].map((service, index) => (
               <div key={index} className="group bg-stone-50 rounded-2xl p-12 hover:bg-stone-800 transition-all duration-300 hover:shadow-xl text-center">
@@ -118,26 +456,26 @@ function App() {
             <div className="space-y-6">
               <div className="flex items-center space-x-2 text-amber-400 mb-4">
                 <Star className="w-5 h-5 fill-current" />
-                <span className="text-sm font-medium uppercase tracking-wider">About KKT Network</span>
+                <span className="text-sm font-medium uppercase tracking-wider">{t.about.badge}</span>
               </div>
               <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
-                Passionate About Digital Excellence
+                {t.about.title}
               </h2>
               <p className="text-stone-300 text-lg leading-relaxed mb-6">
-                At KKT Network, we specialize in two game-changing services that transform how businesses operate online. We create beautiful, professional websites from scratch and integrate intelligent AI chatbots that work 24/7 to serve your customers.
+                {t.about.description1}
               </p>
               <p className="text-stone-300 leading-relaxed mb-8">
-                Whether you're a startup needing your first website or an established business wanting to automate customer service, we provide the complete solution. Our websites are built to convert visitors into customers, while our AI chatbots ensure no inquiry goes unanswered.
+                {t.about.description2}
               </p>
               
               <div className="grid grid-cols-2 gap-6">
                 <div className="text-center">
                   <div className="text-3xl font-bold text-amber-400 mb-2">100+</div>
-                  <div className="text-stone-300">Websites Built</div>
+                  <div className="text-stone-300">{t.about.stat1}</div>
                 </div>
                 <div className="text-center">
                   <div className="text-3xl font-bold text-amber-400 mb-2">24/7</div>
-                  <div className="text-stone-300">AI Support</div>
+                  <div className="text-stone-300">{t.about.stat2}</div>
                 </div>
               </div>
             </div>
@@ -151,8 +489,8 @@ function App() {
                       <Star className="w-6 h-6 text-stone-800 fill-current" />
                     </div>
                     <div>
-                      <h4 className="font-semibold text-white">Creative Excellence</h4>
-                      <p className="text-stone-300 text-sm">Award-winning designs</p>
+                      <h4 className="font-semibold text-white">{t.about.excellence}</h4>
+                      <p className="text-stone-300 text-sm">{t.about.excellenceDesc}</p>
                     </div>
                   </div>
                   <div className="flex items-center space-x-4">
@@ -160,8 +498,8 @@ function App() {
                       <Zap className="w-6 h-6 text-stone-800" />
                     </div>
                     <div>
-                      <h4 className="font-semibold text-white">AI Integration</h4>
-                      <p className="text-stone-300 text-sm">Smart chatbot solutions</p>
+                      <h4 className="font-semibold text-white">{t.about.integration}</h4>
+                      <p className="text-stone-300 text-sm">{t.about.integrationDesc}</p>
                     </div>
                   </div>
                   <div className="flex items-center space-x-4">
@@ -169,8 +507,8 @@ function App() {
                       <Globe className="w-6 h-6 text-stone-800" />
                     </div>
                     <div>
-                      <h4 className="font-semibold text-white">Complete Solutions</h4>
-                      <p className="text-stone-300 text-sm">Website + AI chatbot</p>
+                      <h4 className="font-semibold text-white">{t.about.solutions}</h4>
+                      <p className="text-stone-300 text-sm">{t.about.solutionsDesc}</p>
                     </div>
                   </div>
                 </div>
@@ -186,54 +524,32 @@ function App() {
           <div className="text-center mb-16">
             <div className="flex items-center justify-center space-x-2 text-amber-600 mb-4">
               <Star className="w-5 h-5 fill-current" />
-              <span className="text-sm font-medium uppercase tracking-wider">Our Portfolio</span>
+              <span className="text-sm font-medium uppercase tracking-wider">{t.portfolio.badge}</span>
               <Star className="w-5 h-5 fill-current" />
             </div>
             <h2 className="text-3xl sm:text-4xl font-bold text-stone-800 mb-4">
-              Success Stories
+              {t.portfolio.title}
             </h2>
             <p className="text-lg text-stone-600 max-w-2xl mx-auto">
-              See how our websites and AI chatbots have helped businesses increase sales and improve customer satisfaction.
+              {t.portfolio.subtitle}
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {[
-              {
-                title: "Local Restaurant Chain",
-                category: "Website + AI Chatbot",
-                image: "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800"
-              },
-              {
-                title: "Medical Practice",
-                category: "Website + AI Assistant",
-                image: "https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=800"
-              },
-              {
-                title: "Real Estate Agency",
-                category: "Website + Lead Bot",
-                image: "https://images.pexels.com/photos/267350/pexels-photo-267350.jpeg?auto=compress&cs=tinysrgb&w=800"
-              },
-              {
-                title: "Law Firm",
-                category: "Website + FAQ Bot",
-                image: "https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=800"
-              },
-              {
-                title: "E-commerce Store",
-                category: "Website + Sales Bot",
-                image: "https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=800"
-              },
-              {
-                title: "Fitness Studio",
-                category: "Website + Booking Bot",
-                image: "https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=800"
-              }
-            ].map((project, index) => (
+            {t.portfolio.projects.map((project, index) => {
+              const images = [
+                "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800",
+                "https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=800",
+                "https://images.pexels.com/photos/267350/pexels-photo-267350.jpeg?auto=compress&cs=tinysrgb&w=800",
+                "https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=800",
+                "https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=800",
+                "https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=800"
+              ];
+              return (
               <div key={index} className="group relative overflow-hidden rounded-2xl bg-stone-100 hover:shadow-2xl transition-all duration-300">
                 <div className="aspect-[4/3] overflow-hidden">
                   <img 
-                    src={project.image} 
+                    src={images[index]} 
                     alt={project.title}
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                   />
@@ -244,7 +560,7 @@ function App() {
                   <h3 className="text-xl font-semibold">{project.title}</h3>
                 </div>
               </div>
-            ))}
+            )})}
           </div>
         </div>
       </section>
@@ -259,14 +575,14 @@ function App() {
               <Star className="w-6 h-6 fill-current animate-pulse delay-200" />
             </div>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight">
-              Ready to Transform Your
-              <span className="block text-amber-400">Digital Presence?</span>
+              {t.cta.title1}
+              <span className="block text-amber-400">{t.cta.title2}</span>
             </h2>
             <p className="text-xl text-stone-300 max-w-2xl mx-auto">
-              Get a professional website and 24/7 AI customer support. Transform how your business connects with customers online.
+              {t.cta.subtitle}
             </p>
             <button className="group bg-amber-500 text-stone-800 px-10 py-5 rounded-lg font-bold text-lg hover:bg-amber-400 transition-all duration-300 shadow-lg hover:shadow-xl flex items-center justify-center space-x-3 mx-auto">
-              <span>Get Your Website + AI Bot</span>
+              <span>{t.cta.button}</span>
               <ArrowRight className="w-6 h-6 group-hover:translate-x-2 transition-transform" />
             </button>
           </div>
@@ -279,14 +595,14 @@ function App() {
           <div className="text-center mb-16">
             <div className="flex items-center justify-center space-x-2 text-amber-400 mb-4">
               <Star className="w-5 h-5 fill-current" />
-              <span className="text-sm font-medium uppercase tracking-wider">Client Testimonials</span>
+              <span className="text-sm font-medium uppercase tracking-wider">{t.testimonials.badge}</span>
               <Star className="w-5 h-5 fill-current" />
             </div>
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
-              What Our Clients Say
+              {t.testimonials.title}
             </h2>
             <p className="text-lg text-stone-300 max-w-2xl mx-auto">
-              Don't just take our word for it. Here's what our satisfied clients have to say about working with KKT Network.
+              {t.testimonials.subtitle}
             </p>
           </div>
 
@@ -297,41 +613,10 @@ function App() {
                 role: "Owner, Johnson's Bakery",
                 content: "KKT Network built us a beautiful website and added an AI chatbot that takes orders 24/7. We're getting customers even when we're closed! Our online orders increased by 400% in just two months.",
                 rating: 5
-              },
-              {
-                name: "Michael Chen",
-                role: "Dentist, Chen Family Dental",
-                content: "The AI chatbot answers patient questions instantly and books appointments automatically. Our staff can focus on patient care while the bot handles inquiries. It's like having a receptionist that never sleeps!",
-                rating: 5
-              },
-              {
-                name: "Emily Rodriguez",
-                role: "Real Estate Agent",
-                content: "My new website looks amazing and the AI chatbot qualifies leads automatically. I'm closing more deals because potential buyers get instant answers to their questions, even at midnight!",
-                rating: 5
-              },
-              {
-                name: "David Thompson",
-                role: "Attorney, Thompson & Associates",
-                content: "Our law firm's website now looks incredibly professional, and the AI chatbot handles initial client consultations perfectly. We're getting more qualified leads than ever before.",
-                rating: 5
-              },
-              {
-                name: "Lisa Park",
-                role: "Fitness Studio Owner",
-                content: "The website showcases our classes beautifully, and the AI chatbot books memberships and answers questions about our programs instantly. Our conversion rate has tripled!",
-                rating: 5
-              },
-              {
-                name: "James Wilson",
-                role: "Restaurant Owner, Wilson's Grill",
-                content: "The AI chatbot takes reservations and answers menu questions 24/7. We never miss a booking now, and customers love getting instant responses. Our revenue has increased significantly!",
-                rating: 5
-              }
-            ].map((testimonial, index) => (
+            {t.testimonials.testimonialList.map((testimonial, index) => (
               <div key={index} className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20 hover:bg-white/15 transition-all duration-300">
                 <div className="flex items-center mb-4">
-                  {[...Array(testimonial.rating)].map((_, i) => (
+                  {[...Array(5)].map((_, i) => (
                     <Star key={i} className="w-5 h-5 text-amber-400 fill-current" />
                   ))}
                 </div>
@@ -356,9 +641,9 @@ function App() {
           <div className="text-center mt-12">
             <div className="inline-flex items-center space-x-2 bg-white/10 backdrop-blur-sm rounded-full px-6 py-3 border border-white/20">
               <Star className="w-5 h-5 text-amber-400 fill-current" />
-              <span className="text-white font-medium">4.9/5 Average Rating</span>
+              <span className="text-white font-medium">4.9/5 {t.testimonials.rating}</span>
               <span className="text-stone-300">•</span>
-              <span className="text-stone-300">150+ Happy Clients</span>
+              <span className="text-stone-300">150+ {t.testimonials.clients}</span>
             </div>
           </div>
         </div>
@@ -370,26 +655,26 @@ function App() {
           <div className="space-y-8">
             <div className="flex items-center justify-center space-x-2 text-amber-600 mb-4">
               <Star className="w-5 h-5 fill-current" />
-              <span className="text-sm font-medium uppercase tracking-wider">Ready to Get Started?</span>
+              <span className="text-sm font-medium uppercase tracking-wider">{t.bookCall.badge}</span>
               <Star className="w-5 h-5 fill-current" />
             </div>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-stone-800 leading-tight">
-              Let's Discuss Your
-              <span className="block text-amber-600">Next Project</span>
+              {t.bookCall.title1}
+              <span className="block text-amber-600">{t.bookCall.title2}</span>
             </h2>
             <p className="text-xl text-stone-600 max-w-2xl mx-auto leading-relaxed">
-              Schedule a free consultation to discuss your website needs and learn how a 24/7 AI chatbot can transform your customer service and boost your sales.
+              {t.bookCall.subtitle}
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <button className="group bg-stone-800 text-white px-10 py-5 rounded-lg font-bold text-lg hover:bg-stone-700 transition-all duration-300 shadow-lg hover:shadow-xl flex items-center justify-center space-x-3">
                 <Phone className="w-6 h-6" />
-                <span>Book a Call</span>
+                <span>{t.bookCall.button}</span>
                 <ArrowRight className="w-6 h-6 group-hover:translate-x-2 transition-transform" />
               </button>
               <div className="flex items-center space-x-2 text-stone-600">
                 <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
-                <span className="text-sm font-medium">Available today</span>
+                <span className="text-sm font-medium">{t.bookCall.available}</span>
               </div>
             </div>
             
@@ -398,22 +683,22 @@ function App() {
                 <div className="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-3">
                   <Globe className="w-6 h-6 text-stone-800" />
                 </div>
-                <h4 className="font-semibold text-stone-800 mb-1">Website Analysis</h4>
-                <p className="text-sm text-stone-600">Free website audit</p>
+                <h4 className="font-semibold text-stone-800 mb-1">{t.bookCall.analysis}</h4>
+                <p className="text-sm text-stone-600">{t.bookCall.analysisDesc}</p>
               </div>
               <div className="text-center">
                 <div className="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-3">
                   <Zap className="w-6 h-6 text-stone-800" />
                 </div>
-                <h4 className="font-semibold text-stone-800 mb-1">AI Demo</h4>
-                <p className="text-sm text-stone-600">See chatbot in action</p>
+                <h4 className="font-semibold text-stone-800 mb-1">{t.bookCall.demo}</h4>
+                <p className="text-sm text-stone-600">{t.bookCall.demoDesc}</p>
               </div>
               <div className="text-center">
                 <div className="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-3">
                   <Star className="w-6 h-6 text-stone-800 fill-current" />
                 </div>
-                <h4 className="font-semibold text-stone-800 mb-1">Custom Solutions</h4>
-                <p className="text-sm text-stone-600">Built for your business</p>
+                <h4 className="font-semibold text-stone-800 mb-1">{t.bookCall.custom}</h4>
+                <p className="text-sm text-stone-600">{t.bookCall.customDesc}</p>
               </div>
             </div>
           </div>
@@ -426,14 +711,14 @@ function App() {
           <div className="text-center mb-16">
             <div className="flex items-center justify-center space-x-2 text-amber-600 mb-4">
               <Star className="w-5 h-5 fill-current" />
-              <span className="text-sm font-medium uppercase tracking-wider">Get In Touch</span>
+              <span className="text-sm font-medium uppercase tracking-wider">{t.contact.badge}</span>
               <Star className="w-5 h-5 fill-current" />
             </div>
             <h2 className="text-3xl sm:text-4xl font-bold text-stone-800 mb-4">
-              Let's Start a Conversation
+              {t.contact.title}
             </h2>
             <p className="text-lg text-stone-600 max-w-2xl mx-auto">
-              Ready to get a professional website and 24/7 AI customer support? Let's discuss how we can transform your business.
+              {t.contact.subtitle}
             </p>
           </div>
 
@@ -445,7 +730,7 @@ function App() {
                     <Mail className="w-6 h-6 text-stone-800" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-stone-800 mb-1">Email Us</h3>
+                    <h3 className="font-semibold text-stone-800 mb-1">{t.contact.email}</h3>
                     <p className="text-stone-600">hello@kktnetwork.com</p>
                   </div>
                 </div>
@@ -454,7 +739,7 @@ function App() {
                     <Phone className="w-6 h-6 text-stone-800" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-stone-800 mb-1">Call Us</h3>
+                    <h3 className="font-semibold text-stone-800 mb-1">{t.contact.call}</h3>
                     <p className="text-stone-600">+1 (555) 123-4567</p>
                   </div>
                 </div>
@@ -463,7 +748,7 @@ function App() {
                     <MapPin className="w-6 h-6 text-stone-800" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-stone-800 mb-1">Visit Us</h3>
+                    <h3 className="font-semibold text-stone-800 mb-1">{t.contact.visit}</h3>
                     <p className="text-stone-600">123 Creative Street<br />Design District, NY 10001</p>
                   </div>
                 </div>
@@ -474,7 +759,7 @@ function App() {
               <form className="space-y-6">
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
-                    <label className="block text-sm font-medium text-stone-700 mb-2">First Name</label>
+                    <label className="block text-sm font-medium text-stone-700 mb-2">{t.contact.firstName}</label>
                     <input 
                       type="text" 
                       className="w-full px-4 py-3 border border-stone-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-transparent transition-all"
@@ -482,7 +767,7 @@ function App() {
                     />
                   </div>
                   <div>
-                    <label className="block text-sm font-medium text-stone-700 mb-2">Last Name</label>
+                    <label className="block text-sm font-medium text-stone-700 mb-2">{t.contact.lastName}</label>
                     <input 
                       type="text" 
                       className="w-full px-4 py-3 border border-stone-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-transparent transition-all"
@@ -499,28 +784,26 @@ function App() {
                   />
                 </div>
                 <div>
-                  <label className="block text-sm font-medium text-stone-700 mb-2">Project Type</label>
+                  <label className="block text-sm font-medium text-stone-700 mb-2">{t.contact.projectType}</label>
                   <select className="w-full px-4 py-3 border border-stone-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-transparent transition-all">
-                    <option>New Website + AI Chatbot</option>
-                    <option>Website Only</option>
-                    <option>AI Chatbot Only</option>
-                    <option>Website Redesign + AI Chatbot</option>
-                    <option>Other</option>
+                    {t.contact.projectOptions.map((option, index) => (
+                      <option key={index}>{option}</option>
+                    ))}
                   </select>
                 </div>
                 <div>
-                  <label className="block text-sm font-medium text-stone-700 mb-2">Message</label>
+                  <label className="block text-sm font-medium text-stone-700 mb-2">{t.contact.message}</label>
                   <textarea 
                     rows={4}
                     className="w-full px-4 py-3 border border-stone-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-transparent transition-all resize-none"
-                    placeholder="Tell us about your business and what you'd like to achieve with your website and AI chatbot..."
+                    placeholder={t.contact.messagePlaceholder}
                   ></textarea>
                 </div>
                 <button 
                   type="submit"
                   className="w-full bg-stone-800 text-white py-4 rounded-lg font-semibold hover:bg-stone-700 transition-colors duration-300 flex items-center justify-center space-x-2"
                 >
-                  <span>Send Message</span>
+                  <span>{t.contact.sendMessage}</span>
                   <ArrowRight className="w-5 h-5" />
                 </button>
               </form>
@@ -555,31 +838,30 @@ function App() {
             </div>
             
             <div>
-              <h4 className="font-semibold mb-4">Services</h4>
+              <h4 className="font-semibold mb-4">{t.footer.servicesTitle}</h4>
               <ul className="space-y-2 text-stone-400">
-                <li><a href="#" className="hover:text-amber-400 transition-colors">Website Creation</a></li>
-                <li><a href="#" className="hover:text-amber-400 transition-colors">AI Chatbot Integration</a></li>
-                <li><a href="#" className="hover:text-amber-400 transition-colors">24/7 Customer Support</a></li>
-                <li><a href="#" className="hover:text-amber-400 transition-colors">Lead Generation</a></li>
+                {t.footer.services.map((service, index) => (
+                  <li key={index}><a href="#" className="hover:text-amber-400 transition-colors">{service}</a></li>
+                ))}
               </ul>
             </div>
             
             <div>
-              <h4 className="font-semibold mb-4">Company</h4>
+              <h4 className="font-semibold mb-4">{t.footer.companyTitle}</h4>
               <ul className="space-y-2 text-stone-400">
-                <li><a href="#about" className="hover:text-amber-400 transition-colors">About Us</a></li>
-                <li><a href="#portfolio" className="hover:text-amber-400 transition-colors">Portfolio</a></li>
-                <li><a href="#contact" className="hover:text-amber-400 transition-colors">Contact</a></li>
-                <li><a href="#" className="hover:text-amber-400 transition-colors">Careers</a></li>
+                <li><a href="#about" className="hover:text-amber-400 transition-colors">{t.footer.company[0]}</a></li>
+                <li><a href="#portfolio" className="hover:text-amber-400 transition-colors">{t.footer.company[1]}</a></li>
+                <li><a href="#contact" className="hover:text-amber-400 transition-colors">{t.footer.company[2]}</a></li>
+                <li><a href="#" className="hover:text-amber-400 transition-colors">{t.footer.company[3]}</a></li>
               </ul>
             </div>
           </div>
           
           <div className="border-t border-stone-800 mt-12 pt-8 text-center">
             <p className="text-stone-400">
-              © 2025 KKT Network. All rights reserved. Crafted with 
+              {t.footer.copyright}
               <span className="text-amber-400 mx-1">★</span> 
-              to help businesses thrive online.
+              {t.footer.copyrightEnd}
             </p>
           </div>
         </div>
