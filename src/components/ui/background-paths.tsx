@@ -58,7 +58,7 @@ export function BackgroundPaths({
     const words = title.split(" ");
 
     return (
-        <div className="relative min-h-screen w-full flex items-center justify-center overflow-hidden bg-stone-800">
+        <div className="relative min-h-screen w-full flex items-center justify-center overflow-hidden bg-stone-900">
             <div className="absolute inset-0">
                 <FloatingPaths position={1} />
                 <FloatingPaths position={-1} />
@@ -75,7 +75,7 @@ export function BackgroundPaths({
                         initial={{ opacity: 0, y: 30 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 1, delay: 0.3 }}
-                        className="inline-flex items-center gap-3 px-6 py-3 rounded-full bg-white/[0.03] border border-white/[0.08] mb-8 md:mb-12"
+                        className="inline-flex items-center gap-3 px-6 py-3 rounded-full bg-white/[0.15] border border-white/[0.25] mb-8 md:mb-12"
                     >
                         <img 
                             src="/KKT Logo 2.jpg" 
