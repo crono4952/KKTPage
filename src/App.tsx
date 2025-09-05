@@ -38,8 +38,8 @@ function App() {
         contact: "Contact"
       },
       hero: {
-        title1: "Elevate Your Digital Vision",
-        title2: "Crafting Exceptional Websites"
+        title1: "Transform Your Business with AI",
+        title2: "Websites & Chatbots That Actually Work"
       },
       intro: {
         title: "AI-Powered Solutions That Work 24/7", 
@@ -214,8 +214,8 @@ function App() {
         contact: "Contact"
       },
       hero: {
-        title1: "Élevez Votre Vision Numérique",
-        title2: "Créer des Sites Web Exceptionnels"
+        title1: "Transformez Votre Entreprise avec l'IA",
+        title2: "Sites Web & Chatbots Qui Fonctionnent Vraiment"
       },
       intro: {
         title: "Solutions IA Qui Travaillent 24h/24",
