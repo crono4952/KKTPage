@@ -530,9 +530,6 @@ function App() {
                 <p className="text-stone-600 group-hover:text-stone-300 transition-colors text-lg leading-relaxed">
                   {service.description}
                 </p>
-                <p className="text-stone-600 group-hover:text-stone-300 transition-colors text-xl font-medium leading-relaxed mb-8">
-                  {service.description}
-                </p>
                 <ul className="text-left space-y-3">
                   {service.benefits.map((benefit, benefitIndex) => (
                     <li key={benefitIndex} className="flex items-start space-x-3 text-stone-600 group-hover:text-stone-300 transition-colors">
