@@ -38,146 +38,171 @@ function App() {
         contact: "Contact"
       },
       hero: {
-        title1: "Crafting Digital",
-        title2: "Experiences"
+        title1: "Get More Customers",
+        title2: "While You Sleep"
+      },
+      intro: {
+        title: "AI-Powered Solutions That Work 24/7",
+        description: "We help businesses grow faster with smart AI chatbots and lightning-fast website creation. While others take months, we deliver professional results in days using cutting-edge AI technology."
       },
       services: {
-        badge: "Our Services",
-        title: "Our Core Services",
-        subtitle: "We specialize in two essential services that transform how businesses connect with their customers online.",
+        badge: "What We Do",
+        title: "Two Ways We Help You Grow",
+        subtitle: "Choose the solution that fits your business needs. Both are powered by AI for faster, better results.",
         service1: {
-          title: "Complete Website Creation",
-          description: "We build stunning, professional websites for any business from the ground up. Modern, responsive, and optimized for search engines to help you establish a powerful online presence."
+          title: "AI Chatbot Integration",
+          description: "Already have a website? Add a smart AI assistant that never sleeps.",
+          benefits: [
+            "Answer customer questions instantly, 24/7",
+            "Capture more leads automatically",
+            "Boost customer satisfaction",
+            "Reduce support workload"
+          ]
         },
         service2: {
-          title: "24/7 AI Chatbot Integration",
-          description: "Smart AI chatbot agents that never sleep. Provide instant customer support, answer questions, and capture leads around the clock to grow your business automatically."
+          title: "AI Website Creation",
+          description: "Need a website? We'll build you a professional one in days, not months.",
+          benefits: [
+            "Professional design delivered in days",
+            "Cost-effective compared to agencies",
+            "Mobile-friendly and fast-loading",
+            "Built to convert visitors into customers"
+          ]
         }
       },
-      about: {
-        badge: "About KKT Network",
-        title: "Passionate About Digital Excellence",
-        description1: "At KKT Network, we specialize in two game-changing services that transform how businesses operate online. We create beautiful, professional websites from scratch and integrate intelligent AI chatbots that work 24/7 to serve your customers.",
-        description2: "Whether you're a startup needing your first website or an established business wanting to automate customer service, we provide the complete solution. Our websites are built to convert visitors into customers, while our AI chatbots ensure no inquiry goes unanswered.",
-        stat1: "Websites Built",
-        stat2: "AI Support",
-        excellence: "Creative Excellence",
-        excellenceDesc: "Award-winning designs",
-        integration: "AI Integration",
-        integrationDesc: "Smart chatbot solutions",
-        solutions: "Complete Solutions",
-        solutionsDesc: "Website + AI chatbot"
+      whyChoose: {
+        badge: "Why Choose KKT Network",
+        title: "We're Different (And Faster)",
+        subtitle: "While others take months and charge thousands, we deliver professional results in days at a fraction of the cost.",
+        reasons: [
+          {
+            title: "Lightning Fast",
+            description: "AI-powered development means days, not months"
+          },
+          {
+            title: "Budget Friendly",
+            description: "Professional results without agency prices"
+          },
+          {
+            title: "Always Available",
+            description: "Your AI chatbot works 24/7, even when you don't"
+          },
+          {
+            title: "Real Support",
+            description: "Talk to real humans when you need help"
+          }
+        ]
       },
       portfolio: {
         badge: "Our Portfolio",
-        title: "Success Stories",
-        subtitle: "See how our websites and AI chatbots have helped businesses increase sales and improve customer satisfaction.",
+        title: "Real Results for Real Businesses",
+        subtitle: "See how we've helped businesses like yours get more customers and save time.",
         projects: [
-          { title: "Local Restaurant Chain", category: "Website + AI Chatbot" },
-          { title: "Medical Practice", category: "Website + AI Assistant" },
-          { title: "Real Estate Agency", category: "Website + Lead Bot" },
-          { title: "Law Firm", category: "Website + FAQ Bot" },
-          { title: "E-commerce Store", category: "Website + Sales Bot" },
-          { title: "Fitness Studio", category: "Website + Booking Bot" }
+          { title: "Local Restaurant", category: "Takes orders 24/7 now" },
+          { title: "Medical Practice", category: "Books appointments automatically" },
+          { title: "Real Estate Agency", category: "Qualifies leads instantly" },
+          { title: "Law Firm", category: "Answers client questions 24/7" },
+          { title: "E-commerce Store", category: "Increased sales by 40%" },
+          { title: "Fitness Studio", category: "Tripled membership signups" }
         ]
       },
       cta: {
-        title1: "Ready to Transform Your",
-        title2: "Digital Presence?",
-        subtitle: "Get a professional website and 24/7 AI customer support. Transform how your business connects with customers online.",
-        button: "Get Your Website + AI Bot"
+        title1: "Ready to Get More",
+        title2: "Customers?",
+        subtitle: "Book a free consultation and we'll show you exactly how AI can grow your business. No commitment, just results.",
+        button: "Book Your Free Consultation"
       },
       testimonials: {
-        badge: "Client Testimonials",
-        title: "What Our Clients Say",
-        subtitle: "Don't just take our word for it. Here's what our satisfied clients have to say about working with KKT Network.",
+        badge: "Happy Customers",
+        title: "Real People, Real Results",
+        subtitle: "Here's what happens when you let AI work for your business.",
         rating: "Average Rating",
         clients: "Happy Clients",
         testimonialList: [
           {
             name: "Sarah Johnson",
             role: "Owner, Johnson's Bakery",
-            content: "KKT Network built us a beautiful website and added an AI chatbot that takes orders 24/7. We're getting customers even when we're closed! Our online orders increased by 400% in just two months."
+            content: "Our AI chatbot takes orders even when we're closed! We went from zero online orders to 400% more sales in just two months. Best investment we ever made."
           },
           {
             name: "Michael Chen",
             role: "Dentist, Chen Family Dental",
-            content: "The AI chatbot answers patient questions instantly and books appointments automatically. Our staff can focus on patient care while the bot handles inquiries. It's like having a receptionist that never sleeps!"
+            content: "Patients love getting instant answers to their questions. The AI books appointments automatically, so my staff can focus on patient care. It's like having a receptionist that never takes a break!"
           },
           {
             name: "Emily Rodriguez",
             role: "Real Estate Agent",
-            content: "My new website looks amazing and the AI chatbot qualifies leads automatically. I'm closing more deals because potential buyers get instant answers to their questions, even at midnight!"
+            content: "Buyers get instant answers to their questions, even at midnight. The AI qualifies leads for me automatically. I'm closing 50% more deals now!"
           },
           {
             name: "David Thompson",
             role: "Attorney, Thompson & Associates",
-            content: "Our law firm's website now looks incredibly professional, and the AI chatbot handles initial client consultations perfectly. We're getting more qualified leads than ever before."
+            content: "The AI handles initial client questions perfectly. We're getting 3x more qualified leads, and our website finally looks as professional as our service."
           },
           {
             name: "Lisa Park",
             role: "Fitness Studio Owner",
-            content: "The website showcases our classes beautifully, and the AI chatbot books memberships and answers questions about our programs instantly. Our conversion rate has tripled!"
+            content: "Members can ask questions about classes and book sessions instantly. Our membership signups tripled in the first month!"
           },
           {
             name: "James Wilson",
             role: "Restaurant Owner, Wilson's Grill",
-            content: "The AI chatbot takes reservations and answers menu questions 24/7. We never miss a booking now, and customers love getting instant responses. Our revenue has increased significantly!"
+            content: "We never miss a reservation anymore. The AI answers menu questions and takes bookings 24/7. Revenue is up 35% and customers love the instant service!"
           }
         ]
       },
       bookCall: {
-        badge: "Ready to Get Started?",
-        title1: "Let's Discuss Your",
-        title2: "Next Project",
-        subtitle: "Schedule a free consultation to discuss your website needs and learn how a 24/7 AI chatbot can transform your customer service and boost your sales.",
-        button: "Book a Call",
+        badge: "Get Started Today",
+        title1: "See How AI Can",
+        title2: "Grow Your Business",
+        subtitle: "Book a free 15-minute call. We'll show you exactly how AI can get you more customers and save you time. No sales pitch, just results.",
+        button: "Book Your Free Call",
         available: "Available today",
-        analysis: "Website Analysis",
-        analysisDesc: "Free website audit",
-        demo: "AI Demo",
-        demoDesc: "See chatbot in action",
-        custom: "Custom Solutions",
-        customDesc: "Built for your business"
+        analysis: "Free Analysis",
+        analysisDesc: "We'll audit your current setup",
+        demo: "Live Demo",
+        demoDesc: "See AI in action for your business",
+        custom: "Custom Plan",
+        customDesc: "Tailored to your specific needs"
       },
       contact: {
-        badge: "Get In Touch",
-        title: "Let's Start a Conversation",
-        subtitle: "Ready to get a professional website and 24/7 AI customer support? Let's discuss how we can transform your business.",
+        badge: "Let's Talk",
+        title: "Ready to Grow Your Business?",
+        subtitle: "Tell us about your business and we'll show you exactly how AI can help you get more customers.",
         email: "Email Us",
         call: "Call Us",
         firstName: "First Name",
         lastName: "Last Name",
         projectType: "Project Type",
         message: "Message",
-        messagePlaceholder: "Tell us about your business and what you'd like to achieve with your website and AI chatbot...",
+        messagePlaceholder: "Tell us about your business and your biggest challenges with getting new customers...",
         sendMessage: "Send Message",
         projectOptions: [
-          "New Website + AI Chatbot",
-          "Website Only",
-          "AI Chatbot Only",
-          "Website Redesign + AI Chatbot",
+          "I need an AI chatbot for my existing website",
+          "I need a new website built",
+          "I want both a website and AI chatbot",
+          "I'm not sure what I need",
           "Other"
         ]
       },
       footer: {
-        description: "Building professional websites and intelligent AI chatbots that work 24/7 to grow your business and delight your customers.",
+        description: "We help businesses get more customers with AI-powered websites and chatbots that work 24/7. Fast, affordable, and effective.",
         servicesTitle: "Services",
         services: [
-          "Website Creation",
           "AI Chatbot Integration",
-          "24/7 Customer Support",
-          "Lead Generation"
+          "AI Website Creation",
+          "Free Consultation",
+          "Ongoing Support"
         ],
         companyTitle: "Company",
         company: [
           "About Us",
           "Portfolio",
           "Contact",
-          "Careers"
+          "Get Started"
         ],
-        copyright: "© 2025 KKT Network. All rights reserved. Crafted with",
-        copyrightEnd: "to help businesses thrive online."
+        copyright: "© 2025 KKT Network. All rights reserved. Built with",
+        copyrightEnd: "to help your business grow."
       }
     },
     fr: {
@@ -189,146 +214,171 @@ function App() {
         contact: "Contact"
       },
       hero: {
-        title1: "Créer des Expériences",
-        title2: "Numériques"
+        title1: "Obtenez Plus de Clients",
+        title2: "Pendant Que Vous Dormez"
+      },
+      intro: {
+        title: "Solutions IA Qui Travaillent 24h/24",
+        description: "Nous aidons les entreprises à croître plus rapidement avec des chatbots IA intelligents et une création de sites web ultra-rapide. Pendant que d'autres prennent des mois, nous livrons des résultats professionnels en quelques jours grâce à la technologie IA de pointe."
       },
       services: {
-        badge: "Nos Services",
-        title: "Nos Services Principaux",
-        subtitle: "Nous nous spécialisons dans deux services essentiels qui transforment la façon dont les entreprises se connectent avec leurs clients en ligne.",
+        badge: "Ce Que Nous Faisons",
+        title: "Deux Façons de Vous Aider à Grandir",
+        subtitle: "Choisissez la solution qui correspond aux besoins de votre entreprise. Les deux sont alimentées par l'IA pour des résultats plus rapides et meilleurs.",
         service1: {
-          title: "Création Complète de Site Web",
-          description: "Nous construisons des sites web magnifiques et professionnels pour toute entreprise à partir de zéro. Modernes, adaptatifs et optimisés pour les moteurs de recherche pour vous aider à établir une présence en ligne puissante."
+          title: "Intégration Chatbot IA",
+          description: "Vous avez déjà un site web? Ajoutez un assistant IA intelligent qui ne dort jamais.",
+          benefits: [
+            "Répond aux questions clients instantanément, 24h/24",
+            "Capture plus de prospects automatiquement",
+            "Améliore la satisfaction client",
+            "Réduit la charge de support"
+          ]
         },
         service2: {
-          title: "Intégration de Chatbot IA 24/7",
-          description: "Agents chatbot IA intelligents qui ne dorment jamais. Fournissent un support client instantané, répondent aux questions et capturent des prospects 24h/24 pour faire croître votre entreprise automatiquement."
+          title: "Création de Site Web IA",
+          description: "Besoin d'un site web? Nous vous en construirons un professionnel en quelques jours, pas des mois.",
+          benefits: [
+            "Design professionnel livré en quelques jours",
+            "Rentable comparé aux agences",
+            "Compatible mobile et chargement rapide",
+            "Conçu pour convertir les visiteurs en clients"
+          ]
         }
       },
-      about: {
-        badge: "À Propos de KKT Network",
-        title: "Passionnés par l'Excellence Numérique",
-        description1: "Chez KKT Network, nous nous spécialisons dans deux services révolutionnaires qui transforment la façon dont les entreprises opèrent en ligne. Nous créons de beaux sites web professionnels à partir de zéro et intégrons des chatbots IA intelligents qui travaillent 24h/24 pour servir vos clients.",
-        description2: "Que vous soyez une startup ayant besoin de votre premier site web ou une entreprise établie souhaitant automatiser le service client, nous fournissons la solution complète. Nos sites web sont conçus pour convertir les visiteurs en clients, tandis que nos chatbots IA s'assurent qu'aucune demande ne reste sans réponse.",
-        stat1: "Sites Web Créés",
-        stat2: "Support IA",
-        excellence: "Excellence Créative",
-        excellenceDesc: "Designs primés",
-        integration: "Intégration IA",
-        integrationDesc: "Solutions chatbot intelligentes",
-        solutions: "Solutions Complètes",
-        solutionsDesc: "Site web + chatbot IA"
+      whyChoose: {
+        badge: "Pourquoi Choisir KKT Network",
+        title: "Nous Sommes Différents (Et Plus Rapides)",
+        subtitle: "Pendant que d'autres prennent des mois et facturent des milliers, nous livrons des résultats professionnels en quelques jours à une fraction du coût.",
+        reasons: [
+          {
+            title: "Ultra Rapide",
+            description: "Le développement alimenté par l'IA signifie des jours, pas des mois"
+          },
+          {
+            title: "Abordable",
+            description: "Résultats professionnels sans les prix d'agence"
+          },
+          {
+            title: "Toujours Disponible",
+            description: "Votre chatbot IA travaille 24h/24, même quand vous ne le faites pas"
+          },
+          {
+            title: "Vrai Support",
+            description: "Parlez à de vraies personnes quand vous avez besoin d'aide"
+          }
+        ]
       },
       portfolio: {
         badge: "Notre Portfolio",
-        title: "Histoires de Succès",
-        subtitle: "Découvrez comment nos sites web et chatbots IA ont aidé les entreprises à augmenter leurs ventes et améliorer la satisfaction client.",
+        title: "Vrais Résultats pour Vraies Entreprises",
+        subtitle: "Voyez comment nous avons aidé des entreprises comme la vôtre à obtenir plus de clients et économiser du temps.",
         projects: [
-          { title: "Chaîne de Restaurants Locaux", category: "Site Web + Chatbot IA" },
-          { title: "Cabinet Médical", category: "Site Web + Assistant IA" },
-          { title: "Agence Immobilière", category: "Site Web + Bot Prospects" },
-          { title: "Cabinet d'Avocats", category: "Site Web + Bot FAQ" },
-          { title: "Boutique E-commerce", category: "Site Web + Bot Ventes" },
-          { title: "Studio de Fitness", category: "Site Web + Bot Réservation" }
+          { title: "Restaurant Local", category: "Prend commandes 24h/24 maintenant" },
+          { title: "Cabinet Médical", category: "Réserve rendez-vous automatiquement" },
+          { title: "Agence Immobilière", category: "Qualifie prospects instantanément" },
+          { title: "Cabinet d'Avocats", category: "Répond aux clients 24h/24" },
+          { title: "Boutique E-commerce", category: "Augmenté ventes de 40%" },
+          { title: "Studio de Fitness", category: "Triplé inscriptions membres" }
         ]
       },
       cta: {
-        title1: "Prêt à Transformer Votre",
-        title2: "Présence Numérique?",
-        subtitle: "Obtenez un site web professionnel et un support client IA 24h/24. Transformez la façon dont votre entreprise se connecte avec les clients en ligne.",
-        button: "Obtenez Votre Site Web + Bot IA"
+        title1: "Prêt à Obtenir Plus",
+        title2: "de Clients?",
+        subtitle: "Réservez une consultation gratuite et nous vous montrerons exactement comment l'IA peut faire croître votre entreprise. Aucun engagement, que des résultats.",
+        button: "Réservez Votre Consultation Gratuite"
       },
       testimonials: {
-        badge: "Témoignages Clients",
-        title: "Ce Que Disent Nos Clients",
-        subtitle: "Ne nous croyez pas sur parole. Voici ce que nos clients satisfaits ont à dire sur leur collaboration avec KKT Network.",
+        badge: "Clients Satisfaits",
+        title: "Vraies Personnes, Vrais Résultats",
+        subtitle: "Voici ce qui arrive quand vous laissez l'IA travailler pour votre entreprise.",
         rating: "Note Moyenne",
         clients: "Clients Satisfaits",
         testimonialList: [
           {
             name: "Sarah Johnson",
             role: "Propriétaire, Boulangerie Johnson",
-            content: "KKT Network nous a construit un beau site web et ajouté un chatbot IA qui prend les commandes 24h/24. Nous recevons des clients même quand nous sommes fermés ! Nos commandes en ligne ont augmenté de 400% en seulement deux mois."
+            content: "Notre chatbot IA prend les commandes même quand nous sommes fermés! Nous sommes passés de zéro commande en ligne à 400% plus de ventes en seulement deux mois. Meilleur investissement jamais fait."
           },
           {
             name: "Michael Chen",
             role: "Dentiste, Dentaire Famille Chen",
-            content: "Le chatbot IA répond aux questions des patients instantanément et prend les rendez-vous automatiquement. Notre personnel peut se concentrer sur les soins aux patients pendant que le bot gère les demandes. C'est comme avoir une réceptionniste qui ne dort jamais !"
+            content: "Les patients adorent obtenir des réponses instantanées à leurs questions. L'IA réserve les rendez-vous automatiquement, donc mon personnel peut se concentrer sur les soins. C'est comme avoir une réceptionniste qui ne prend jamais de pause!"
           },
           {
             name: "Emily Rodriguez",
             role: "Agent Immobilier",
-            content: "Mon nouveau site web est magnifique et le chatbot IA qualifie les prospects automatiquement. Je conclus plus d'affaires parce que les acheteurs potentiels obtiennent des réponses instantanées à leurs questions, même à minuit !"
+            content: "Les acheteurs obtiennent des réponses instantanées à leurs questions, même à minuit. L'IA qualifie les prospects pour moi automatiquement. Je conclus 50% plus d'affaires maintenant!"
           },
           {
             name: "David Thompson",
             role: "Avocat, Thompson & Associés",
-            content: "Le site web de notre cabinet d'avocats paraît incroyablement professionnel maintenant, et le chatbot IA gère parfaitement les consultations initiales des clients. Nous obtenons plus de prospects qualifiés que jamais."
+            content: "L'IA gère parfaitement les questions initiales des clients. Nous obtenons 3x plus de prospects qualifiés, et notre site web paraît enfin aussi professionnel que notre service."
           },
           {
             name: "Lisa Park",
             role: "Propriétaire Studio de Fitness",
-            content: "Le site web présente nos cours magnifiquement, et le chatbot IA réserve les adhésions et répond aux questions sur nos programmes instantanément. Notre taux de conversion a triplé !"
+            content: "Les membres peuvent poser des questions sur les cours et réserver des sessions instantanément. Nos inscriptions d'adhésion ont triplé le premier mois!"
           },
           {
             name: "James Wilson",
             role: "Propriétaire Restaurant, Grill Wilson",
-            content: "Le chatbot IA prend les réservations et répond aux questions sur le menu 24h/24. Nous ne manquons jamais une réservation maintenant, et les clients adorent obtenir des réponses instantanées. Nos revenus ont considérablement augmenté !"
+            content: "Nous ne manquons plus jamais une réservation. L'IA répond aux questions sur le menu et prend les réservations 24h/24. Les revenus ont augmenté de 35% et les clients adorent le service instantané!"
           }
         ]
       },
       bookCall: {
-        badge: "Prêt à Commencer?",
-        title1: "Discutons de Votre",
-        title2: "Prochain Projet",
-        subtitle: "Planifiez une consultation gratuite pour discuter de vos besoins de site web et découvrir comment un chatbot IA 24h/24 peut transformer votre service client et augmenter vos ventes.",
-        button: "Réserver un Appel",
+        badge: "Commencez Aujourd'hui",
+        title1: "Voyez Comment l'IA Peut",
+        title2: "Faire Croître Votre Entreprise",
+        subtitle: "Réservez un appel gratuit de 15 minutes. Nous vous montrerons exactement comment l'IA peut vous obtenir plus de clients et vous faire économiser du temps. Pas de discours de vente, que des résultats.",
+        button: "Réservez Votre Appel Gratuit",
         available: "Disponible aujourd'hui",
-        analysis: "Analyse de Site Web",
-        analysisDesc: "Audit gratuit de site web",
-        demo: "Démo IA",
-        demoDesc: "Voir le chatbot en action",
-        custom: "Solutions Personnalisées",
-        customDesc: "Conçu pour votre entreprise"
+        analysis: "Analyse Gratuite",
+        analysisDesc: "Nous auditerons votre configuration actuelle",
+        demo: "Démo en Direct",
+        demoDesc: "Voir l'IA en action pour votre entreprise",
+        custom: "Plan Personnalisé",
+        customDesc: "Adapté à vos besoins spécifiques"
       },
       contact: {
-        badge: "Contactez-Nous",
-        title: "Commençons une Conversation",
-        subtitle: "Prêt à obtenir un site web professionnel et un support client IA 24h/24? Discutons de la façon dont nous pouvons transformer votre entreprise.",
+        badge: "Parlons",
+        title: "Prêt à Faire Croître Votre Entreprise?",
+        subtitle: "Parlez-nous de votre entreprise et nous vous montrerons exactement comment l'IA peut vous aider à obtenir plus de clients.",
         email: "Envoyez-nous un Email",
         call: "Appelez-Nous",
         firstName: "Prénom",
         lastName: "Nom",
         projectType: "Type de Projet",
         message: "Message",
-        messagePlaceholder: "Parlez-nous de votre entreprise et de ce que vous aimeriez accomplir avec votre site web et chatbot IA...",
+        messagePlaceholder: "Parlez-nous de votre entreprise et de vos plus grands défis pour obtenir de nouveaux clients...",
         sendMessage: "Envoyer le Message",
         projectOptions: [
-          "Nouveau Site Web + Chatbot IA",
-          "Site Web Seulement",
-          "Chatbot IA Seulement",
-          "Refonte Site Web + Chatbot IA",
+          "J'ai besoin d'un chatbot IA pour mon site existant",
+          "J'ai besoin d'un nouveau site web",
+          "Je veux un site web et un chatbot IA",
+          "Je ne suis pas sûr de ce dont j'ai besoin",
           "Autre"
         ]
       },
       footer: {
-        description: "Construire des sites web professionnels et des chatbots IA intelligents qui travaillent 24h/24 pour faire croître votre entreprise et ravir vos clients.",
+        description: "Nous aidons les entreprises à obtenir plus de clients avec des sites web et chatbots IA qui travaillent 24h/24. Rapide, abordable et efficace.",
         servicesTitle: "Services",
         services: [
-          "Création de Site Web",
           "Intégration Chatbot IA",
-          "Support Client 24/7",
-          "Génération de Prospects"
+          "Création Site Web IA",
+          "Consultation Gratuite",
+          "Support Continu"
         ],
         companyTitle: "Entreprise",
         company: [
           "À Propos",
           "Portfolio",
           "Contact",
-          "Carrières"
+          "Commencer"
         ],
-        copyright: "© 2025 KKT Network. Tous droits réservés. Créé avec",
-        copyrightEnd: "pour aider les entreprises à prospérer en ligne."
+        copyright: "© 2025 KKT Network. Tous droits réservés. Construit avec",
+        copyrightEnd: "pour aider votre entreprise à grandir."
       }
     }
   };
@@ -426,6 +476,18 @@ function App() {
         <BackgroundPaths title={`${t.hero.title1} ${t.hero.title2}`} language={language} />
       </section>
 
+      {/* Intro Section */}
+      <section className="py-16 bg-gradient-to-b from-stone-900 to-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-2xl sm:text-3xl font-bold text-white mb-6">
+            {t.intro.title}
+          </h2>
+          <p className="text-lg text-stone-300 leading-relaxed">
+            {t.intro.description}
+          </p>
+        </div>
+      </section>
+
       {/* Services Section */}
       <section id="services" className="relative py-20 bg-white z-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -446,14 +508,16 @@ function App() {
           <div className="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
             {[
               {
-                icon: <Globe className="w-8 h-8" />,
+                icon: <Zap className="w-8 h-8" />,
                 title: t.services.service1.title,
-                description: t.services.service1.description
+                description: t.services.service1.description,
+                benefits: t.services.service1.benefits
               },
               {
-                icon: <Zap className="w-8 h-8" />,
+                icon: <Globe className="w-8 h-8" />,
                 title: t.services.service2.title,
-                description: t.services.service2.description
+                description: t.services.service2.description,
+                benefits: t.services.service2.benefits
               }
             ].map((service, index) => (
               <div key={index} className="group bg-stone-50 rounded-2xl p-12 hover:bg-stone-800 transition-all duration-300 hover:shadow-xl text-center">
@@ -466,75 +530,63 @@ function App() {
                 <p className="text-stone-600 group-hover:text-stone-300 transition-colors text-lg leading-relaxed">
                   {service.description}
                 </p>
+                <ul className="text-left space-y-3">
+                  {service.benefits.map((benefit, benefitIndex) => (
+                    <li key={benefitIndex} className="flex items-start space-x-3 text-stone-600 group-hover:text-stone-300 transition-colors">
+                      <div className="w-2 h-2 bg-amber-600 group-hover:bg-amber-400 rounded-full mt-2 flex-shrink-0"></div>
+                      <span>{benefit}</span>
+                    </li>
+                  ))}
+                </ul>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* About Section */}
+      {/* Why Choose Us Section */}
       <section id="about" className="py-20 bg-stone-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="space-y-6">
-              <div className="flex items-center space-x-2 text-amber-400 mb-4">
-                <Star className="w-5 h-5 fill-current" />
-                <span className="text-sm font-medium uppercase tracking-wider">{t.about.badge}</span>
-              </div>
-              <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
-                {t.about.title}
-              </h2>
-              <p className="text-stone-300 text-lg leading-relaxed mb-6">
-                {t.about.description1}
-              </p>
-              <p className="text-stone-300 leading-relaxed mb-8">
-                {t.about.description2}
-              </p>
-              
-              <div className="grid grid-cols-2 gap-6">
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-amber-400 mb-2">100+</div>
-                  <div className="text-stone-300">{t.about.stat1}</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-amber-400 mb-2">24/7</div>
-                  <div className="text-stone-300">{t.about.stat2}</div>
-                </div>
-              </div>
+          <div className="text-center mb-16">
+            <div className="flex items-center justify-center space-x-2 text-amber-400 mb-4">
+              <Star className="w-5 h-5 fill-current" />
+              <span className="text-sm font-medium uppercase tracking-wider">{t.whyChoose.badge}</span>
+              <Star className="w-5 h-5 fill-current" />
             </div>
+            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
+              {t.whyChoose.title}
+            </h2>
+            <p className="text-lg text-stone-300 max-w-2xl mx-auto">
+              {t.whyChoose.subtitle}
+            </p>
+          </div>
 
-            <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-r from-amber-400/20 to-stone-600/20 rounded-3xl blur-2xl"></div>
-              <div className="relative bg-white/10 backdrop-blur-sm rounded-3xl p-4 md:p-6 border border-white/20 max-w-xs mx-auto">
-                <div className="space-y-6 flex flex-col items-start">
-                  <div className="flex items-center justify-center space-x-4">
-                    <div className="w-12 h-12 bg-amber-400 rounded-full flex items-center justify-center">
-                      <Star className="w-6 h-6 text-stone-800 fill-current" />
-                    </div>
-                    <div className="text-left">
-                      <h4 className="font-semibold text-white">{t.about.excellence}</h4>
-                      <p className="text-stone-300 text-sm">{t.about.excellenceDesc}</p>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {t.whyChoose.reasons.map((reason, index) => {
+              const icons = [<Zap className="w-6 h-6" />, <Diamond className="w-6 h-6" />, <Globe className="w-6 h-6" />, <Star className="w-6 h-6 fill-current" />];
+              return (
+                <div key={index} className="text-center">
+                  <div className="w-16 h-16 bg-amber-400 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <div className="text-stone-800">
+                      {icons[index]}
                     </div>
                   </div>
-                  <div className="flex items-center justify-center space-x-4">
-                    <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center">
-                      <Zap className="w-6 h-6 text-stone-800" />
-                    </div>
-                    <div className="text-left">
-                      <h4 className="font-semibold text-white">{t.about.integration}</h4>
-                      <p className="text-stone-300 text-sm">{t.about.integrationDesc}</p>
-                    </div>
-                  </div>
-                  <div className="flex items-center justify-center space-x-4">
-                    <div className="w-12 h-12 bg-amber-400 rounded-full flex items-center justify-center">
-                      <Globe className="w-6 h-6 text-stone-800" />
-                    </div>
-                    <div className="text-left">
-                      <h4 className="font-semibold text-white">{t.about.solutions}</h4>
-                      <p className="text-stone-300 text-sm">{t.about.solutionsDesc}</p>
-                    </div>
-                  </div>
+                  <h3 className="text-xl font-semibold text-white mb-3">{reason.title}</h3>
+                  <p className="text-stone-300">{reason.description}</p>
                 </div>
+              );
+            })}
+          </div>
+
+          <div className="text-center mt-12">
+            <div className="grid grid-cols-2 gap-6 max-w-md mx-auto">
+              <div className="text-center">
+                <div className="text-3xl font-bold text-amber-400 mb-2">100+</div>
+                <div className="text-stone-300">Happy Businesses</div>
+              </div>
+              <div className="text-center">
+                <div className="text-3xl font-bold text-amber-400 mb-2">24/7</div>
+                <div className="text-stone-300">AI Support</div>
               </div>
             </div>
           </div>
