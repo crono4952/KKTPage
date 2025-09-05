@@ -477,7 +477,7 @@ function App() {
       </section>
 
       {/* Intro Section */}
-      <section className="py-16 bg-gradient-to-b from-stone-900 to-white">
+      <section className="py-16 bg-stone-900">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-2xl sm:text-3xl font-bold text-white mb-6">
             {t.intro.title}
