@@ -38,11 +38,11 @@ function App() {
         contact: "Contact"
       },
       hero: {
-        title1: "Get More Customers",
-        title2: "While You Sleep"
+        title1: "Elevate Your Digital Vision",
+        title2: "Crafting Exceptional Websites"
       },
       intro: {
-        title: "AI-Powered Solutions That Work 24/7",
+        title: "AI-Powered Solutions That Work 24/7", 
         description: "We help businesses grow faster with smart AI chatbots and lightning-fast website creation. While others take months, we deliver professional results in days using cutting-edge AI technology."
       },
       services: {
@@ -214,8 +214,8 @@ function App() {
         contact: "Contact"
       },
       hero: {
-        title1: "Obtenez Plus de Clients",
-        title2: "Pendant Que Vous Dormez"
+        title1: "Élevez Votre Vision Numérique",
+        title2: "Créer des Sites Web Exceptionnels"
       },
       intro: {
         title: "Solutions IA Qui Travaillent 24h/24",
