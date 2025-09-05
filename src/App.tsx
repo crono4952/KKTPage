@@ -528,6 +528,7 @@ function App() {
                   {service.title}
                 </h3>
                 <p className="text-stone-600 group-hover:text-stone-300 transition-colors text-xl font-medium leading-relaxed mb-12 font-serif">
+                <p className="text-stone-600 group-hover:text-stone-300 transition-colors text-xl font-semibold leading-relaxed mb-12 font-sans tracking-wide">
                   {service.description}
                 </p>
                 <ul className="text-left space-y-3">
