@@ -38,8 +38,8 @@ function App() {
         contact: "Contact"
       },
       hero: {
-        title1: "Transform Your Business with AI",
-        title2: "Websites & Chatbots That Actually Work"
+        title1: "Transform Your Business",
+        title2: "with AI That Actually Work"
       },
       intro: {
         title: "AI-Powered Solutions That Work 24/7", 
@@ -214,8 +214,8 @@ function App() {
         contact: "Contact"
       },
       hero: {
-        title1: "Transformez Votre Entreprise avec l'IA",
-        title2: "Sites Web & Chatbots Qui Fonctionnent Vraiment"
+        title1: "Transformez Votre Entreprise",
+        title2: "avec l'IA Qui Fonctionne Vraiment"
       },
       intro: {
         title: "Solutions IA Qui Travaillent 24h/24",
