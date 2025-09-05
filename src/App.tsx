@@ -388,7 +388,7 @@ function App() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-amber-50 to-stone-100">
       {/* Header */}
-      <header className="fixed top-0 left-0 right-0 z-50 bg-white border-b border-stone-200">
+      <header className="fixed top-0 left-0 right-0 z-50 bg-amber-50 border-b border-stone-200">
         <div className="max-w-7xl mx-auto pl-4 pr-2 sm:pr-4 lg:pr-6">
           <div className="flex justify-between items-center h-16">
             {/* Logo */}
@@ -441,7 +441,7 @@ function App() {
 
           {/* Mobile Navigation */}
           {isMenuOpen && (
-            <div className="md:hidden py-4 border-t border-stone-200">
+            <div className="md:hidden py-4 border-t border-stone-200 bg-amber-50">
               <nav className="flex flex-col space-y-2">
                 <a href="#home" className="px-4 py-2 text-stone-700 hover:text-amber-600 transition-colors">{t.nav.home}</a>
                 <a href="#services" className="px-4 py-2 text-stone-700 hover:text-amber-600 transition-colors">{t.nav.services}</a>
@@ -489,7 +489,7 @@ function App() {
       </section>
 
       {/* Services Section */}
-      <section id="services" className="relative py-20 bg-white z-10">
+      <section id="services" className="relative py-20 bg-amber-50 z-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <div className="flex items-center justify-center space-x-2 text-amber-600 mb-4">
@@ -594,7 +594,7 @@ function App() {
       </section>
 
       {/* Portfolio Section */}
-      <section id="portfolio" className="py-20 bg-white">
+      <section id="portfolio" className="py-20 bg-amber-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <div className="flex items-center justify-center space-x-2 text-amber-600 mb-4">
@@ -683,7 +683,7 @@ function App() {
       </section>
 
       {/* Testimonials Section */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-amber-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <div className="flex items-center justify-center space-x-2 text-amber-600 mb-4">
@@ -791,7 +791,7 @@ function App() {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-20 bg-white">
+      <section id="contact" className="py-20 bg-amber-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <div className="flex items-center justify-center space-x-2 text-amber-600 mb-4">
