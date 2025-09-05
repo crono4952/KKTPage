@@ -520,7 +520,7 @@ function App() {
                 benefits: t.services.service2.benefits
               }
             ].map((service, index) => (
-              <div key={index} className="group bg-stone-50 rounded-2xl p-12 hover:bg-stone-800 transition-all duration-300 hover:shadow-xl text-center border border-stone-200 hover:border-stone-700">
+              <div key={index} className="group bg-stone-100 rounded-2xl p-12 hover:bg-stone-800 transition-all duration-300 hover:shadow-xl text-center border border-stone-300 hover:border-stone-700">
                 <div className="text-amber-600 group-hover:text-amber-400 mb-6 transition-colors flex justify-center">
                   {service.icon}
                 </div>
