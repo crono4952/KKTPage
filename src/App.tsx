@@ -762,7 +762,7 @@ function App() {
               <ul className="space-y-2 text-stone-400">
                 <li><a href="#about" className="hover:text-amber-400 transition-colors">{t.footer.company[0]}</a></li>
                 <li><a href="#portfolio" className="hover:text-amber-400 transition-colors">{t.footer.company[1]}</a></li>
-                <li><a href="#contact" className="hover:text-amber-400 transition-colors">{t.footer.company[2]}</a></li>
+                <li><button onClick={handleBookCall} className="hover:text-amber-400 transition-colors text-left">{t.footer.company[2]}</button></li>
                 <li><a href="#" className="hover:text-amber-400 transition-colors">{t.footer.company[3]}</a></li>
               </ul>
             </div>
