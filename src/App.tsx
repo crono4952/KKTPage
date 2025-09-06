@@ -424,7 +424,6 @@ function App() {
                 <a href="#services" className="text-stone-700 hover:text-amber-600 transition-colors font-medium">{t.nav.services}</a>
                 <a href="#about" className="text-stone-700 hover:text-amber-600 transition-colors font-medium">{t.nav.about}</a>
                 <a href="#portfolio" className="text-stone-700 hover:text-amber-600 transition-colors font-medium">{t.nav.portfolio}</a>
-                <a href="#contact" className="text-stone-700 hover:text-amber-600 transition-colors font-medium">{t.nav.contact}</a>
               </nav>
               
               {/* Book a Call Button */}
@@ -464,7 +463,6 @@ function App() {
                 <a href="#services" className="px-4 py-2 text-stone-700 hover:text-amber-600 transition-colors">{t.nav.services}</a>
                 <a href="#about" className="px-4 py-2 text-stone-700 hover:text-amber-600 transition-colors">{t.nav.about}</a>
                 <a href="#portfolio" className="px-4 py-2 text-stone-700 hover:text-amber-600 transition-colors">{t.nav.portfolio}</a>
-                <a href="#contact" className="px-4 py-2 text-stone-700 hover:text-amber-600 transition-colors">{t.nav.contact}</a>
                 <div className="px-4 py-2">
                   <button
                     onClick={handleBookCall}
