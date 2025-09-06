@@ -94,23 +94,9 @@ export function BackgroundPaths({
                     </motion.div>
 
                     <h1 className="text-5xl sm:text-7xl md:text-8xl font-bold mb-8 tracking-tighter">
-                        {words.map((word, wordIndex) => (
-                            <motion.span
-                                key={wordIndex}
-                                initial={{ opacity: 0, y: 50 }}
-                                animate={{ opacity: 1, y: 0 }}
-                                transition={{
-                                    delay: wordIndex * 0.15,
-                                    duration: 0.8,
-                                    ease: [0.25, 0.4, 0.25, 1],
-                                }}
-                                className="inline-block mr-4 last:mr-0"
-                            >
-                                <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-white/80">
-                                    {word}
-                                </span>
-                            </motion.span>
-                        ))}
+                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-white/80">
+                            {heroText}
+                        </span>
                     </h1>
 
                     <div
