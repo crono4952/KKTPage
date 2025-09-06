@@ -731,6 +731,48 @@ function App() {
         </div>
       </section>
 
+      {/* CTA Section */}
+      <section className="py-20 bg-gradient-to-r from-stone-800 to-stone-900">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <div className="space-y-8">
+            <div className="flex items-center justify-center space-x-2 text-amber-400 mb-4">
+              <Star className="w-6 h-6 fill-current animate-pulse" />
+              <Star className="w-4 h-4 fill-current animate-pulse delay-100" />
+              <Star className="w-6 h-6 fill-current animate-pulse delay-200" />
+            </div>
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight">
+              {t.cta.title1}
+              <span className="block text-transparent bg-clip-text bg-gradient-to-r from-amber-300 via-amber-400 to-amber-500">{t.cta.title2}</span>
+            </h2>
+            <p className="text-xl text-stone-300 max-w-2xl mx-auto">
+              {t.cta.subtitle}
+            </p>
+            <button 
+              onClick={handleBookCall}
+              className="inline-block group relative bg-gradient-to-b from-white/10 to-black/10 
+                        p-px rounded-2xl backdrop-blur-lg 
+                        overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300"
+            >
+              <div className="rounded-[1.15rem] px-8 py-6 text-lg font-semibold backdrop-blur-md 
+                            bg-white/[0.03] hover:bg-white/[0.08] border border-white/[0.08]
+                            text-white/60 hover:text-white transition-all duration-300 
+                            group-hover:-translate-y-0.5 border border-white/10
+                            hover:shadow-md hover:shadow-neutral-800/50 flex items-center justify-center space-x-3">
+                <span className="opacity-90 group-hover:opacity-100 transition-opacity">
+                  {t.cta.button}
+                </span>
+                <span
+                  className="opacity-70 group-hover:opacity-100 group-hover:translate-x-1.5 
+                            transition-all duration-300"
+                >
+                  →
+                </span>
+              </div>
+            </button>
+          </div>
+        </div>
+      </section>
+
       {/* Book a Call Section */}
       <section className="py-20 bg-stone-800">
       </section>
