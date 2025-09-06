@@ -103,16 +103,17 @@ function App() {
       },
       portfolio: {
         badge: "Our Portfolio",
-        title: "Real Results for Real Businesses",
-        subtitle: "See how we've helped businesses like yours get more customers and save time.",
+        title: "Proven Performance",
+        subtitle: "Real businesses, real metrics, real growth. Here's what happens when you work with us.",
         projects: [
-          { title: "Local Restaurant", category: "Takes orders 24/7 now" },
-          { title: "Medical Practice", category: "Books appointments automatically" },
-          { title: "Real Estate Agency", category: "Qualifies leads instantly" },
-          { title: "Law Firm", category: "Answers client questions 24/7" },
+          { title: "Local Restaurant", category: "Increased orders by 300%" },
+          { title: "Medical Practice", category: "Cut support calls by 60%" },
+          { title: "Real Estate Agency", category: "Boosted leads by 150%" },
+          { title: "Law Firm", category: "Launched in under a week" },
           { title: "E-commerce Store", category: "Increased sales by 40%" },
           { title: "Fitness Studio", category: "Tripled membership signups" }
-        ]
+        ],
+        cta: "See how we can deliver the same results for your business—book a free call."
       },
       cta: {
         title1: "Ready to Get More",
