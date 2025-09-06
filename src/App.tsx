@@ -38,8 +38,16 @@ function App() {
         contact: "Contact"
       },
       hero: {
-        title1: "Transform Your Business",
-        title2: "with AI That Actually Work"
+        title: "Get More Customers, Faster – Powered by AI",
+        subtitle: "We build high-converting websites with built-in AI chatbots that work 24/7. Get professional results in days, not months – without agency costs.",
+        benefits: [
+          "Built in days, not months",
+          "AI chatbots that never sleep", 
+          "Proven to increase conversions",
+          "Fraction of agency costs"
+        ],
+        cta: "Book Your Free Strategy Call",
+        button: "Schedule My Free Call"
       },
       intro: {
         title: "AI-Powered Solutions That Work 24/7", 
@@ -214,8 +222,16 @@ function App() {
         contact: "Contact"
       },
       hero: {
-        title1: "Transformez Votre Entreprise",
-        title2: "avec l'IA Qui Fonctionne Vraiment"
+        title: "Obtenez Plus de Clients, Plus Rapidement – Alimenté par l'IA",
+        subtitle: "Nous construisons des sites web à haute conversion avec des chatbots IA intégrés qui fonctionnent 24h/24. Obtenez des résultats professionnels en quelques jours, pas des mois – sans les coûts d'agence.",
+        benefits: [
+          "Construit en jours, pas en mois",
+          "Chatbots IA qui ne dorment jamais",
+          "Prouvé pour augmenter les conversions", 
+          "Fraction des coûts d'agence"
+        ],
+        cta: "Réservez Votre Appel Stratégique Gratuit",
+        button: "Planifier Mon Appel Gratuit"
       },
       intro: {
         title: "Solutions IA Qui Travaillent 24h/24",
@@ -473,7 +489,50 @@ function App() {
 
       {/* Hero Section */}
       <section id="home" className="relative">
-        <BackgroundPaths title={`${t.hero.title1} ${t.hero.title2}`} language={language} />
+        <div className="relative min-h-screen bg-gradient-to-br from-stone-900 via-stone-800 to-stone-900 flex items-center justify-center overflow-hidden">
+          <div className="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%23ffffff" fill-opacity="0.03"%3E%3Ccircle cx="30" cy="30" r="1"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')] opacity-40"></div>
+          
+          <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div className="mb-8">
+              <div className="inline-flex items-center space-x-3 px-6 py-3 rounded-full bg-amber-500/10 border border-amber-500/20 mb-8">
+                <img 
+                  src="/KKT Logo 2.jpg" 
+                  alt="KKT Network Logo" 
+                  className="h-8 w-8 rounded-full object-cover"
+                />
+                <span className="text-amber-400 font-semibold tracking-wide">KKT Network</span>
+              </div>
+              
+              <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold text-white mb-6 leading-tight">
+                {t.hero.title}
+              </h1>
+              
+              <p className="text-xl sm:text-2xl text-stone-300 mb-8 max-w-4xl mx-auto leading-relaxed">
+                {t.hero.subtitle}
+              </p>
+              
+              <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-12 max-w-4xl mx-auto">
+                {t.hero.benefits.map((benefit, index) => (
+                  <div key={index} className="flex items-center justify-center space-x-2 bg-stone-800/50 rounded-lg px-4 py-3 border border-stone-700">
+                    <div className="w-2 h-2 bg-amber-400 rounded-full"></div>
+                    <span className="text-stone-300 text-sm font-medium">{benefit}</span>
+                  </div>
+                ))}
+              </div>
+              
+              <div className="space-y-4">
+                <p className="text-lg text-amber-400 font-semibold">{t.hero.cta}</p>
+                <button
+                  onClick={handleBookCall}
+                  className="inline-flex items-center space-x-3 bg-amber-500 text-stone-900 px-8 py-4 rounded-lg font-bold text-lg hover:bg-amber-400 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
+                >
+                  <span>{t.hero.button}</span>
+                  <ArrowRight className="w-6 h-6" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
       {/* Intro Section */}
