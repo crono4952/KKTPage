@@ -490,19 +490,24 @@ function App() {
 
       {/* Hero Section */}
       <section id="home" className="relative">
-        <BackgroundPaths title={t.bookCall.title1 + " " + t.bookCall.title2} language={language} />
-        <div className="absolute inset-0 bg-stone-900/50"></div>
-        <div className="relative min-h-screen bg-stone-900 flex items-center justify-center overflow-hidden z-10">
+        <div className="relative min-h-screen bg-stone-900 flex items-center justify-center overflow-hidden">
+          <BackgroundPaths title={t.bookCall.title1 + " " + t.bookCall.title2} language={language} />
+          <div className="absolute inset-0 bg-stone-900/50"></div>
           <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <div className="space-y-8">
-              <div className="flex items-center justify-center space-x-2 text-amber-400 mb-4">
-                <Star className="w-5 h-5 fill-current" />
-                <span className="text-sm font-medium uppercase tracking-wider">{t.bookCall.badge}</span>
-                <Star className="w-5 h-5 fill-current" />
+              <div className="inline-flex items-center gap-3 px-6 py-3 rounded-full bg-white/[0.15] border border-white/[0.25] mb-8 md:mb-12">
+                <img 
+                  src="/KKT Logo 2.jpg" 
+                  alt="KKT Network Logo" 
+                  className="h-12 w-12 rounded-full object-cover"
+                />
+                <span className="text-lg text-white/60 tracking-wide font-medium">
+                  KKT Network
+                </span>
               </div>
               <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight">
                 {t.bookCall.title1}
-                <span className="block text-amber-400">{t.bookCall.title2}</span>
+                <span className="block text-transparent bg-clip-text bg-gradient-to-r from-amber-300 to-amber-500">{t.bookCall.title2}</span>
               </h1>
               <p className="text-xl text-stone-300 max-w-2xl mx-auto leading-relaxed">
                 {t.bookCall.subtitle}
