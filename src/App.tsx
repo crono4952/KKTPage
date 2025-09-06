@@ -746,13 +746,6 @@ function App() {
               <p className="text-stone-400 mb-4 max-w-md">
                 {t.footer.description}
               </p>
-              <div className="flex space-x-4">
-                {[1, 2, 3, 4].map((i) => (
-                  <div key={i} className="w-10 h-10 bg-stone-800 rounded-full flex items-center justify-center hover:bg-amber-600 transition-colors cursor-pointer">
-                    <Star className="w-5 h-5 fill-current" />
-                  </div>
-                ))}
-              </div>
             </div>
             
             <div>
