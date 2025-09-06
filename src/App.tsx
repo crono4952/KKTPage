@@ -211,7 +211,7 @@ function App() {
           "Get Started"
         ],
         copyright: "© 2025 KKT Network. All rights reserved. Built with",
-        copyrightEnd: "to help your business grow."
+        copyrightEnd: ""
       }
     },
     fr: {
@@ -395,7 +395,7 @@ function App() {
           "Commencer"
         ],
         copyright: "© 2025 KKT Network. Tous droits réservés. Construit avec",
-        copyrightEnd: "pour aider votre entreprise à grandir."
+        copyrightEnd: ""
       }
     }
   };
@@ -778,8 +778,6 @@ function App() {
           <div className="border-t border-stone-800 mt-12 pt-8 text-center">
             <p className="text-stone-400">
               {t.footer.copyright}
-              <span className="text-amber-400 mx-1">★</span> 
-              {t.footer.copyrightEnd}
             </p>
           </div>
         </div>
