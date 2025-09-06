@@ -490,38 +490,10 @@ function App() {
 
       {/* Hero Section */}
       <section id="home" className="relative">
-        <div className="pt-20 pb-16 bg-gradient-to-br from-amber-50 to-stone-100">
-          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-stone-800 mb-6 leading-tight">
-              {t.hero.title}
-            </h1>
-            <p className="text-xl text-stone-600 mb-8 max-w-3xl mx-auto leading-relaxed">
-              {t.hero.subtitle}
-            </p>
-            
-            <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8 max-w-3xl mx-auto">
-              {t.hero.benefits.map((benefit, index) => (
-                <div key={index} className="bg-white/80 backdrop-blur-sm rounded-lg p-4 border border-stone-200 shadow-sm">
-                  <div className="flex items-center space-x-2">
-                    <div className="w-2 h-2 bg-amber-500 rounded-full flex-shrink-0"></div>
-                    <span className="text-sm font-medium text-stone-700">{benefit}</span>
-                  </div>
-                </div>
-              ))}
-            </div>
-            
-            <div className="space-y-4">
-              <p className="text-lg font-semibold text-stone-700">{t.hero.cta}</p>
-              <button 
-                onClick={handleBookCall}
-                className="group bg-amber-500 text-stone-800 px-8 py-4 rounded-lg font-bold text-lg hover:bg-amber-400 transition-all duration-300 shadow-lg hover:shadow-xl flex items-center justify-center space-x-3 mx-auto"
-              >
-                <span>{t.hero.button}</span>
-                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-              </button>
-            </div>
-          </div>
-        </div>
+        <BackgroundPaths 
+          title={t.bookCall.title1 + " " + t.bookCall.title2} 
+          language={language} 
+        />
       </section>
 
       {/* Services Section */}
