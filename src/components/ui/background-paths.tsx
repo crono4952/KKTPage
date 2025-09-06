@@ -51,13 +51,17 @@ function FloatingPaths({ position }: { position: number }) {
 }
 
 export function BackgroundPaths({
-    title = "Get More Customers, Faster – Powered by AI",
+    title,
     language = "en",
 }: {
     title?: string;
     language?: "en" | "fr";
 }) {
-    const words = title.split(" ");
+    const heroText = title || (language === "fr" 
+        ? "Obtenez Plus de Clients, Plus Rapidement – Alimenté par l'IA"
+        : "Get More Customers, Faster – Powered by AI");
+    
+    const words = heroText.split(" ");
 
     return (
         <div className="relative h-screen w-full flex items-center justify-center overflow-hidden bg-stone-900">
