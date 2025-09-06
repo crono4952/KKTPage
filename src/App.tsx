@@ -489,7 +489,7 @@ function App() {
       {/* Hero Section */}
       <section id="home" className="relative">
         <BackgroundPaths 
-          title={t.bookCall.title1 + " " + t.bookCall.title2} 
+          title="Get More Customers, Faster – Powered by AI"
           language={language} 
         />
       </section>
