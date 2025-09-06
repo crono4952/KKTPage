@@ -490,62 +490,35 @@ function App() {
 
       {/* Hero Section */}
       <section id="home" className="relative">
-        <div className="relative min-h-screen bg-stone-900 flex items-center justify-center overflow-hidden">
-          <BackgroundPaths title={t.bookCall.title1 + " " + t.bookCall.title2} language={language} />
-          <div className="absolute inset-0 bg-stone-900/50"></div>
-          <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <div className="space-y-8">
-              <div className="inline-flex items-center gap-3 px-6 py-3 rounded-full bg-white/[0.15] border border-white/[0.25] mb-8 md:mb-12">
-                <img 
-                  src="/KKT Logo 2.jpg" 
-                  alt="KKT Network Logo" 
-                  className="h-12 w-12 rounded-full object-cover"
-                />
-                <span className="text-lg text-white/60 tracking-wide font-medium">
-                  KKT Network
-                </span>
-              </div>
-              <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight">
-                {t.bookCall.title1}
-                <span className="block text-transparent bg-clip-text bg-gradient-to-r from-amber-300 to-amber-500">{t.bookCall.title2}</span>
-              </h1>
-              <p className="text-xl text-stone-300 max-w-2xl mx-auto leading-relaxed">
-                {t.bookCall.subtitle}
-              </p>
-              
-              <div className="flex justify-center">
-                <button 
-                  onClick={handleBookCall}
-                  className="group bg-amber-500 text-stone-800 px-10 py-5 rounded-lg font-bold text-lg hover:bg-amber-400 transition-all duration-300 shadow-lg hover:shadow-xl flex items-center justify-center space-x-3"
-                >
-                  <span>{t.bookCall.button}</span>
-                  <ArrowRight className="w-6 h-6 group-hover:translate-x-2 transition-transform" />
-                </button>
-              </div>
-              
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-12 max-w-2xl mx-auto">
-                <div className="text-center">
-                  <div className="w-12 h-12 bg-amber-400 rounded-full flex items-center justify-center mx-auto mb-3">
-                    <Globe className="w-6 h-6 text-stone-800" />
+        <div className="pt-20 pb-16 bg-gradient-to-br from-amber-50 to-stone-100">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-stone-800 mb-6 leading-tight">
+              {t.hero.title}
+            </h1>
+            <p className="text-xl text-stone-600 mb-8 max-w-3xl mx-auto leading-relaxed">
+              {t.hero.subtitle}
+            </p>
+            
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8 max-w-3xl mx-auto">
+              {t.hero.benefits.map((benefit, index) => (
+                <div key={index} className="bg-white/80 backdrop-blur-sm rounded-lg p-4 border border-stone-200 shadow-sm">
+                  <div className="flex items-center space-x-2">
+                    <div className="w-2 h-2 bg-amber-500 rounded-full flex-shrink-0"></div>
+                    <span className="text-sm font-medium text-stone-700">{benefit}</span>
                   </div>
-                  <h4 className="font-semibold text-white mb-1">{t.bookCall.analysis}</h4>
-                  <p className="text-sm text-stone-300">{t.bookCall.analysisDesc}</p>
                 </div>
-                <div className="text-center">
-                  <div className="w-12 h-12 bg-amber-400 rounded-full flex items-center justify-center mx-auto mb-3">
-                    <Zap className="w-6 h-6 text-stone-800" />
-                  </div>
-                  <h4 className="font-semibold text-white mb-1">{t.bookCall.demo}</h4>
-                  <p className="text-sm text-stone-300">{t.bookCall.demoDesc}</p>
-                </div>
-                <div className="text-center">
-                  <div className="w-12 h-12 bg-amber-400 rounded-full flex items-center justify-center mx-auto mb-3">
-                    <Star className="w-6 h-6 text-stone-800 fill-current" />
-                  </div>
-                  <h4 className="font-semibold text-white mb-1">{t.bookCall.custom}</h4>
-                  <p className="text-sm text-stone-300">{t.bookCall.customDesc}</p>
-                </div>
-              </div>
+              ))}
+            </div>
+            
+            <div className="space-y-4">
+              <p className="text-lg font-semibold text-stone-700">{t.hero.cta}</p>
+              <button 
+                onClick={handleBookCall}
+                className="group bg-amber-500 text-stone-800 px-8 py-4 rounded-lg font-bold text-lg hover:bg-amber-400 transition-all duration-300 shadow-lg hover:shadow-xl flex items-center justify-center space-x-3 mx-auto"
+              >
+                <span>{t.hero.button}</span>
+                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+              </button>
             </div>
           </div>
         </div>
