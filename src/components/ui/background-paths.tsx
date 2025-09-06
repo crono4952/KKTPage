@@ -57,9 +57,9 @@ export function BackgroundPaths({
     title?: string;
     language?: "en" | "fr";
 }) {
-    const heroText = title || (language === "fr" 
+    const heroText = language === "fr" 
         ? "Obtenez Plus de Clients, Plus Rapidement – Alimenté par l'IA"
-        : "Get More Customers, Faster – Powered by AI");
+        : "Get More Customers, Faster – Powered by AI";
     
     const words = heroText.split(" ");
 
