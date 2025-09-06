@@ -51,7 +51,7 @@ function FloatingPaths({ position }: { position: number }) {
 }
 
 export function BackgroundPaths({
-    title = "Background Paths",
+    title = "Get More Customers, Faster – Powered by AI",
     language = "en",
 }: {
     title?: string;
