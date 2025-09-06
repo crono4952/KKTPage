@@ -696,7 +696,7 @@ function App() {
             </div>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight">
               {t.cta.title1}
-              <span className="block text-amber-400">{t.cta.title2}</span>
+              <span className="block text-transparent bg-clip-text bg-gradient-to-r from-amber-300 via-amber-400 to-amber-500">{t.bookCall.title2}</span>
             </h2>
             <p className="text-xl text-stone-300 max-w-2xl mx-auto">
               {t.cta.subtitle}
