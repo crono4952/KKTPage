@@ -776,9 +776,7 @@ function App() {
           </div>
           
           <div className="border-t border-stone-800 mt-12 pt-8 text-center">
-            <p className="text-stone-400">
-              {t.footer.copyright}
-            </p>
+            <p className="text-stone-400">© 2025 KKT Network. {language === 'en' ? 'All rights reserved.' : 'Tous droits réservés.'}</p>
           </div>
         </div>
       </footer>
