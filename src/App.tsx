@@ -491,7 +491,7 @@ function App() {
       <section id="home" className="relative">
         <BackgroundPaths title={t.hero.title} language={language} />
         <div className="absolute inset-0 bg-stone-900/50"></div>
-        <div className="relative min-h-screen bg-black flex items-center justify-center overflow-hidden z-10">
+        <div className="relative min-h-screen bg-stone-900 flex items-center justify-center overflow-hidden z-10">
           
           <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <div className="mb-8">
