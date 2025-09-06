@@ -625,19 +625,6 @@ function App() {
               );
             })}
           </div>
-
-          <div className="text-center mt-12">
-            <div className="grid grid-cols-2 gap-6 max-w-md mx-auto">
-              <div className="text-center">
-                <div className="text-3xl font-bold text-amber-400 mb-2">100+</div>
-                <div className="text-stone-300">Happy Businesses</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-amber-400 mb-2">24/7</div>
-                <div className="text-stone-300">AI Support</div>
-              </div>
-            </div>
-          </div>
         </div>
       </section>
 
