@@ -513,7 +513,11 @@ function App() {
               
               <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-12 max-w-4xl mx-auto">
                 {t.hero.benefits.map((benefit, index) => (
-                  <div key={index} className="flex items-center justify-center space-x-2 bg-amber-400/90 backdrop-blur-sm rounded-lg px-4 py-3 border border-amber-500/50 shadow-lg hover:bg-amber-300/90 transition-all duration-300">
+                  <div key={index} className={`flex items-center justify-center space-x-2 backdrop-blur-sm rounded-lg px-4 py-3 shadow-lg transition-all duration-300 ${
+                    index % 2 === 0 
+                      ? 'bg-amber-400/90 border border-amber-500/50 hover:bg-amber-300/90' 
+                      : 'bg-stone-100/90 border border-stone-200/50 hover:bg-stone-50/90'
+                  }`}>
                     <div className="w-2 h-2 bg-stone-800 rounded-full flex-shrink-0"></div>
                     <span className="text-stone-800 text-sm font-semibold text-center leading-tight">{benefit}</span>
                   </div>
