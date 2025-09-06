@@ -81,23 +81,23 @@ function App() {
       whyChoose: {
         badge: "Why Choose KKT Network",
         title: "We're Different (And Faster)",
-        subtitle: "While others take months and charge thousands, we deliver professional results in days at a fraction of the cost.",
+        subtitle: "We get you results—fast, affordably, and reliably.",
         reasons: [
           {
             title: "Lightning Fast",
-            description: "AI-powered development means days, not months"
+            description: "Launch AI-powered sites in days, not months"
           },
           {
-            title: "Budget Friendly",
-            description: "Professional results without agency prices"
+            title: "Budget Smart",
+            description: "Skip agency markups—get premium at a fair price"
           },
           {
-            title: "Always Available",
-            description: "Your AI chatbot works 24/7, even when you don't"
+            title: "Always On",
+            description: "Your AI chat agent works 24/7 to capture every lead"
           },
           {
             title: "Real Support",
-            description: "Talk to real humans when you need help"
+            description: "Connect with real experts when you need help"
           }
         ]
       },
@@ -265,23 +265,23 @@ function App() {
       whyChoose: {
         badge: "Pourquoi Choisir KKT Network",
         title: "Nous Sommes Différents (Et Plus Rapides)",
-        subtitle: "Pendant que d'autres prennent des mois et facturent des milliers, nous livrons des résultats professionnels en quelques jours à une fraction du coût.",
+        subtitle: "Nous vous obtenons des résultats—rapidement, abordablement et de manière fiable.",
         reasons: [
           {
             title: "Ultra Rapide",
-            description: "Le développement alimenté par l'IA signifie des jours, pas des mois"
+            description: "Lancez des sites alimentés par l'IA en jours, pas en mois"
           },
           {
-            title: "Abordable",
-            description: "Résultats professionnels sans les prix d'agence"
+            title: "Budget Intelligent",
+            description: "Évitez les majorations d'agence—obtenez du premium à un prix équitable"
           },
           {
-            title: "Toujours Disponible",
-            description: "Votre chatbot IA travaille 24h/24, même quand vous ne le faites pas"
+            title: "Toujours Actif",
+            description: "Votre agent de chat IA travaille 24h/24 pour capturer chaque prospect"
           },
           {
             title: "Vrai Support",
-            description: "Parlez à de vraies personnes quand vous avez besoin d'aide"
+            description: "Connectez-vous avec de vrais experts quand vous avez besoin d'aide"
           }
         ]
       },
